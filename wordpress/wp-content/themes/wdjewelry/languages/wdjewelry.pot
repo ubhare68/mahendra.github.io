@@ -1,0 +1,3391 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wdjewelry\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Fri Jul 29 2016 12:06:14 GMT+0700 (SE Asia Standard Time)\n"
+"POT-Revision-Date: Fri Jul 29 2016 12:06:26 GMT+0700 (SE Asia Standard Time)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../404.php:16
+msgid "404"
+msgstr ""
+
+#: ../404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../404.php:23
+msgid "GO BACK TO HOME PAGE"
+msgstr ""
+
+#: ../archive.php:59 ../index.php:53 ../search.php:48
+msgid "Previous page"
+msgstr ""
+
+#: ../archive.php:60 ../index.php:54 ../search.php:49
+msgid "Next page"
+msgstr ""
+
+#: ../archive.php:61 ../framework/functions/breadcrumbs.php:172 ..
+#: /framework/functions/breadcrumbs.php:176 ../framework/functions/breadcrumbs.
+#: php:183 ../image.php:58 ../index.php:55 ../page.php:41 ../search.php:50 ..
+#: /template-parts/content-single.php:51 ../templates/template-custom1.php:37 ..
+#: /templates/template-custom2.php:37 ../templates/template-custom3.php:37
+msgid "Page"
+msgstr ""
+
+#: ../comments.php:25 ../comments.php:84
+msgid "Comment"
+msgstr ""
+
+#: ../comments.php:44
+msgid "VIEW MORE COMMENT "
+msgstr ""
+
+#: ../comments.php:51 ../comments.php:58
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:65
+msgid "POST YOUR COMMENT"
+msgstr ""
+
+#: ../comments.php:65 ../woocommerce/single-product-reviews.php:53
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../comments.php:66 ../framework/functions/comment_form.php:56 ..
+#: /woocommerce/single-product-reviews.php:54
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../comments.php:70
+msgid "Username*"
+msgstr ""
+
+#: ../comments.php:71
+msgid "Email*"
+msgstr ""
+
+#: ../comments.php:72 ../framework/functions/comment_form.php:17
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:73
+msgid "Subject*"
+msgstr ""
+
+#: ../comments.php:76 ../framework/visual_composer/heading.php:58 ..
+#: /framework/visual_composer/pricing_table.php:87 ..
+#: /framework/visual_composer/wd_blog_home.php:41
+msgid "Content"
+msgstr ""
+
+#: ../comments.php:78 ../framework/functions/comment_form.php:58 ..
+#: /woocommerce/single-product-reviews.php:62
+msgid "Submit"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:334 ..
+#: /framework/functions/filter_theme.php:169
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:335 ..
+#: /framework/functions/filter_theme.php:170
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: ../framework/class/class-tgm-plugin-activation.php:337 ..
+#: /framework/functions/filter_theme.php:171
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: ../framework/class/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:340 ..
+#: /framework/functions/filter_theme.php:172
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:377 ..
+#: /framework/functions/filter_theme.php:181
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:392 ..
+#: /framework/functions/filter_theme.php:183
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:393 ..
+#: /framework/class/class-tgm-plugin-activation.php:920 ../framework/class/class-
+#: tgm-plugin-activation.php:2626 ../framework/class/class-tgm-plugin-activation.
+#: php:3673
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:394 ..
+#: /framework/class/class-tgm-plugin-activation.php:3252 ..
+#: /framework/functions/filter_theme.php:184
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:395 ..
+#: /framework/class/class-tgm-plugin-activation.php:3045
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: ../framework/class/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../framework/class/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: ../framework/class/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:1027
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:1027 ..
+#: /framework/class/class-tgm-plugin-activation.php:1030
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:1030
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:1214 ..
+#: /framework/class/class-tgm-plugin-activation.php:3041
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: ../framework/class/class-tgm-plugin-activation.php:2075
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: ../framework/class/class-tgm-plugin-activation.php:2435
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: ../framework/class/class-tgm-plugin-activation.php:2481
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../framework/class/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../framework/class/class-tgm-plugin-activation.php:2489
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../framework/class/class-tgm-plugin-activation.php:2493
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2575
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2626
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2641
+msgid "Source"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2642 ..
+#: /framework/visual_composer/wd_blogs_style1.php:35
+msgid "Type"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2647
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: ../framework/class/class-tgm-plugin-activation.php:2696
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: ../framework/class/class-tgm-plugin-activation.php:2701
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: ../framework/class/class-tgm-plugin-activation.php:2707
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2777
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:3001
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:3027
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: ../framework/class/class-tgm-plugin-activation.php:3591
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: ../framework/class/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../framework/class/class-tgm-plugin-activation.php:3596
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../framework/class/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:3602 ..
+#: /framework/class/class-tgm-plugin-activation.php:3610
+msgid "Show Details"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:3602 ..
+#: /framework/class/class-tgm-plugin-activation.php:3610
+msgid "Hide Details"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: ../framework/class/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../framework/class/class-tgm-plugin-activation.php:3610
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../framework/class/class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: ../framework/class/class-tgm-plugin-activation.php:3613
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../framework/functions/breadcrumbs.php:7 ../template-parts/content-custom.php:
+#: 47 ../template-parts/content.php:21
+msgid "Home"
+msgstr ""
+
+#: ../framework/functions/breadcrumbs.php:29
+msgid "Search results for \""
+msgstr ""
+
+#: ../framework/functions/breadcrumbs.php:47 ../framework/functions/breadcrumbs.
+#: php:85
+msgid "Portfolio"
+msgstr ""
+
+#: ../framework/functions/breadcrumbs.php:50 ../framework/functions/breadcrumbs.
+#: php:88
+msgid "Shop"
+msgstr ""
+
+#: ../framework/functions/breadcrumbs.php:92 ../framework/functions/breadcrumbs.
+#: php:158
+msgid "Tagged \""
+msgstr ""
+
+#: ../framework/functions/breadcrumbs.php:163
+msgid "Articles posted by "
+msgstr ""
+
+#: ../framework/functions/breadcrumbs.php:166
+msgid "Error 404"
+msgstr ""
+
+#: ../framework/functions/comment_form.php:15
+msgid "Your Name"
+msgstr ""
+
+#: ../framework/functions/comment_form.php:16
+msgid "Your Email"
+msgstr ""
+
+#: ../framework/functions/comment_form.php:18
+msgid "Messager"
+msgstr ""
+
+#: ../framework/functions/comment_form.php:19
+msgid "placese confirm the fields and submit it ."
+msgstr ""
+
+#: ../framework/functions/comment_form.php:45
+#, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+#: ../framework/functions/comment_form.php:49
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: ../framework/functions/comment_form.php:50
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this "
+"account\">Log out?</a>"
+msgstr ""
+
+#: ../framework/functions/comment_form.php:55
+msgid "Leave a comment"
+msgstr ""
+
+#: ../framework/functions/comment_form.php:57
+msgid "Cancel reply"
+msgstr ""
+
+#: ../framework/functions/comment_form.php:63
+msgid "be first to comment"
+msgstr ""
+
+#: ../framework/functions/filter_theme.php:173
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/functions/filter_theme.php:174
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/functions/filter_theme.php:175
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s plugins."
+" Contact the administrator of this site for help on getting the plugins "
+"installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/functions/filter_theme.php:176
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/functions/filter_theme.php:177
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/functions/filter_theme.php:178
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s plugin."
+" Contact the administrator of this site for help on getting the plugin "
+"activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/functions/filter_theme.php:179
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/functions/filter_theme.php:180
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/functions/filter_theme.php:182
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../framework/functions/filter_theme.php:185
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../framework/functions/item_comment.php:28
+msgid "(Edit)"
+msgstr ""
+
+#: ../framework/functions/list_category_product.php:3
+msgid "select"
+msgstr ""
+
+#: ../framework/functions/pagination.php:112
+msgid "First"
+msgstr ""
+
+#: ../framework/functions/pagination.php:113
+msgid "Previous"
+msgstr ""
+
+#: ../framework/functions/pagination.php:144
+msgid "Next"
+msgstr ""
+
+#: ../framework/functions/pagination.php:145
+msgid "Last"
+msgstr ""
+
+#: ../framework/functions/wd_account.php:21 ../framework/functions/wd_account.php:
+#: 40 ../woocommerce/global/form-login.php:47
+msgid "Login"
+msgstr ""
+
+#: ../framework/functions/wd_account.php:23 ../framework/functions/wd_account.php:
+#: 23
+msgid "My Account"
+msgstr ""
+
+#: ../framework/functions/wd_account.php:24 ../framework/functions/wd_account.php:
+#: 24
+msgid "Logout"
+msgstr ""
+
+#: ../framework/functions/wd_account.php:31
+msgid "User Name"
+msgstr ""
+
+#: ../framework/functions/wd_account.php:34 ../woocommerce/global/form-login.php:38
+msgid "Password"
+msgstr ""
+
+#: ../framework/functions/wd_account.php:46 ../woocommerce/global/form-login.php:50
+msgid "Remember me"
+msgstr ""
+
+#: ../framework/functions/wd_account.php:48 ../woocommerce/global/form-login.php:54
+msgid "Lost your password?"
+msgstr ""
+
+#: ../framework/functions/wd_account.php:100
+msgid "Login/sign up"
+msgstr ""
+
+#: ../framework/functions/wd_customize_animate.php:8
+msgid "Jewelry Animate"
+msgstr ""
+
+#: ../framework/functions/wd_customize_animate.php:9 ..
+#: /framework/functions/wd_customize_banner.php:10 ..
+#: /framework/functions/wd_customize_color.php:10 ..
+#: /framework/functions/wd_customize_font.php:79 ..
+#: /framework/functions/wd_customize_layout.php:9
+msgid "Custom site"
+msgstr ""
+
+#: ../framework/functions/wd_customize_animate.php:14 ..
+#: /framework/functions/wd_customize_font.php:101
+msgid "Header"
+msgstr ""
+
+#: ../framework/functions/wd_customize_animate.php:15 ..
+#: /framework/functions/wd_customize_font.php:124
+msgid "Footer"
+msgstr ""
+
+#: ../framework/functions/wd_customize_animate.php:16 ..
+#: /framework/visual_composer/woo_product.php:8 ../woocommerce/checkout/form-pay.
+#: php:28
+msgid "Product"
+msgstr ""
+
+#: ../framework/functions/wd_customize_animate.php:17
+msgid "Item Post"
+msgstr ""
+
+#: ../framework/functions/wd_customize_animate.php:67
+msgid "Animate"
+msgstr ""
+
+#: ../framework/functions/wd_customize_banner.php:9
+msgid "Jewelry Config Banner"
+msgstr ""
+
+#: ../framework/functions/wd_customize_banner.php:15
+msgid "Banner Shop"
+msgstr ""
+
+#: ../framework/functions/wd_customize_banner.php:27 ..
+#: /framework/functions/wd_customize_banner.php:48 ..
+#: /framework/functions/wd_customize_layout.php:28 ..
+#: /framework/functions/wd_customize_layout.php:165
+msgid "Baner Shop"
+msgstr ""
+
+#: ../framework/functions/wd_customize_banner.php:36
+msgid "Banner NewsLetter"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:9
+msgid "Jewelry Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:15
+msgid "Custom General"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:21
+msgid "Custom Header"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:27
+msgid "Custom Footer"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:33
+msgid "Custom Sidebar"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:39
+msgid "Custom Product"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:45
+msgid "Custom Blog"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:53
+msgid "Primary Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:54
+msgid "Secondary Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:55
+msgid "Body Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:56
+msgid "Breadcrumb Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:57
+msgid "Breadcrumb Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:58
+msgid "Breadcrumb Link Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:59
+msgid "Breadcrumb Link Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:60
+msgid "Heading H1"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:61
+msgid "Heading H2"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:62
+msgid "Heading H3"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:63
+msgid "Heading H4"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:64
+msgid "Heading H5"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:65
+msgid "Heading H6"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:66
+msgid "Text"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:67
+msgid "Border Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:68 ..
+#: /framework/visual_composer/pricing_table.php:52
+msgid "Link"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:69
+msgid "Link Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:70
+msgid "Icon"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:71
+msgid "Button background color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:72
+msgid "Button border color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:73
+msgid "Button color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:74
+msgid "Button background color hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:75
+msgid "Button border color hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:76
+msgid "Button color hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:79
+msgid "Header Top Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:80
+msgid "Header Middle Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:81
+msgid "Header Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:82
+msgid "Header Heading "
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:83
+msgid "Header Link"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:84
+msgid "Header Link Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:85
+msgid "Header Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:86
+msgid "Header Button Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:87
+msgid "Header Button Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:88
+msgid "Header Button Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:89
+msgid "Header Button Hover Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:90
+msgid "Header Button Hover Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:91
+msgid "Header Button Hover Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:94
+msgid "Footer Top Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:95
+msgid "Footer Top Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:96
+msgid "Footer Top Heading"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:97
+msgid "Footer Top Text"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:98
+msgid "Footer Top Link"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:99
+msgid "Footer Top Link Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:100
+msgid "Footer Main background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:101
+msgid "Footer Main Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:102
+msgid "Footer Main Heading"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:103
+msgid "Footer Main Text"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:104
+msgid "Footer Main Link"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:105
+msgid "Footer Main Link Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:106
+msgid "Footer Bottom Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:107
+msgid "Footer Bottom Heading"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:108
+msgid "Footer Bottom Link"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:109
+msgid "Footer Bottom Link Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:110
+msgid "Footer Bottom Text"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:111
+msgid "Footer Bottom Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:112
+msgid "Footer Button Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:113
+msgid "Footer Button Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:114
+msgid "Footer Button Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:115
+msgid "Footer Button Background Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:116
+msgid "Footer Button Border Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:117
+msgid "Footer Button Color Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:120
+msgid "Sidebar Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:121
+msgid "Sidebar Heading"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:122
+msgid "Sidebar Text"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:123
+msgid "Sidebar Link"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:124
+msgid "Sidebar Link Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:125
+msgid "Sidebar Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:126
+msgid "Sidebar Button Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:127
+msgid "Sidebar Button Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:128
+msgid "Sidebar Button Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:129
+msgid "Sidebar Button Background Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:130
+msgid "Sidebar Button Border Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:131
+msgid "Sidebar Button Color Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:134
+msgid "Product Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:135
+msgid "Product Label Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:136
+msgid "Product Tabel Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:137
+msgid "Product Title"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:138
+msgid "Product Title Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:140
+msgid "Product Rating"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:141
+msgid "Product Price"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:142
+msgid "Product Price Sale"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:143
+msgid "Product Option Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:144
+msgid "Product Option Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:145
+msgid "Product Option Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:146
+msgid "Product Option Active Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:147
+msgid "Product Option Active Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:148
+msgid "Product Button Background (Product Detail Page) "
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:149
+msgid "Product Button Border"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:150
+msgid "Product Button Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:151
+msgid "Product Button Background Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:152
+msgid "Product Button Border Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:153
+msgid "Product Button Color Hover"
+msgstr ""
+
+#: ../framework/functions/wd_customize_color.php:156
+msgid "Blog Background"
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:78
+msgid "Jewelry Option"
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:85
+msgid "Jewelry logo"
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:87 ..
+#: /framework/visual_composer/wd_recent_blogs.php:20 ..
+#: /framework/visual_composer/wd_recent_blogs.php:27 ..
+#: /framework/visual_composer/wd_slider_logo.php:13 ..
+#: /framework/visual_composer/wd_slider_logo.php:20
+msgid " "
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:94
+msgid "Logo Default"
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:102 ..
+#: /framework/functions/wd_customize_font.php:125
+msgid "setting  header for site"
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:113 ..
+#: /framework/functions/wd_customize_reset.php:17
+msgid "Header Style"
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:119 ..
+#: /framework/functions/wd_customize_font.php:142 ..
+#: /framework/functions/wd_customize_reset.php:23 ..
+#: /framework/functions/wd_metabox_page.php:24 ..
+#: /framework/functions/wd_metabox_page.php:40 ../inc/customizer.php:214
+msgid "Default"
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:136
+msgid "Footer Style"
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:156
+msgid "Footer Copyright"
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:174
+msgid "Family"
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:188 ..
+#: /framework/visual_composer/heading.php:26 ..
+#: /framework/visual_composer/wd_image.php:23 ..
+#: /framework/visual_composer/woo_product_image.php:32
+msgid "Size"
+msgstr ""
+
+#: ../framework/functions/wd_customize_font.php:201 ..
+#: /framework/functions/wd_metabox.php:22
+msgid "Color"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:8
+msgid "Jewelry Layout"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:15
+msgid "Layout Shop"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:16 ..
+#: /framework/functions/wd_customize_layout.php:100 ..
+#: /framework/functions/wd_customize_layout.php:153 ..
+#: /framework/functions/wd_customize_layout.php:205 ..
+#: /framework/functions/wd_customize_layout.php:321 ..
+#: /framework/functions/wd_customize_layout.php:361 ..
+#: /framework/functions/wd_customize_layout.php:400 ..
+#: /framework/functions/wd_customize_layout.php:439 ..
+#: /framework/functions/wd_customize_layout.php:477 ..
+#: /framework/functions/wd_customize_layout.php:516 ..
+#: /framework/functions/wd_customize_layout.php:554
+msgid "Layout For Site"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:40
+msgid "Colums"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:46
+msgid "2"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:47
+msgid "3"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:48
+msgid "4"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:49
+msgid "6"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:58
+msgid "Number Product In A Page"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:72 ..
+#: /framework/functions/wd_customize_layout.php:124 ..
+#: /framework/functions/wd_customize_layout.php:177 ..
+#: /framework/functions/wd_customize_layout.php:217
+msgid "Layout"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:78 ..
+#: /framework/functions/wd_customize_layout.php:130 ..
+#: /framework/functions/wd_customize_layout.php:183 ..
+#: /framework/functions/wd_customize_layout.php:223 ..
+#: /framework/functions/wd_customize_layout.php:341 ..
+#: /framework/functions/wd_customize_layout.php:380 ..
+#: /framework/functions/wd_customize_layout.php:419 ..
+#: /framework/functions/wd_customize_layout.php:458 ..
+#: /framework/functions/wd_customize_layout.php:496 ..
+#: /framework/functions/wd_customize_layout.php:535 ..
+#: /framework/functions/wd_customize_layout.php:573
+msgid "Full Width"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:79 ..
+#: /framework/functions/wd_customize_layout.php:131 ..
+#: /framework/functions/wd_customize_layout.php:184 ..
+#: /framework/functions/wd_customize_layout.php:194 ..
+#: /framework/functions/wd_customize_layout.php:224 ..
+#: /framework/functions/wd_customize_layout.php:339 ..
+#: /framework/functions/wd_customize_layout.php:378 ..
+#: /framework/functions/wd_customize_layout.php:417 ..
+#: /framework/functions/wd_customize_layout.php:494 ..
+#: /framework/functions/wd_customize_layout.php:533 ..
+#: /framework/functions/wd_customize_layout.php:571
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:80 ..
+#: /framework/functions/wd_customize_layout.php:132 ..
+#: /framework/functions/wd_customize_layout.php:185 ..
+#: /framework/functions/wd_customize_layout.php:225 ..
+#: /framework/functions/wd_customize_layout.php:340 ..
+#: /framework/functions/wd_customize_layout.php:379 ..
+#: /framework/functions/wd_customize_layout.php:418 ..
+#: /framework/functions/wd_customize_layout.php:457 ..
+#: /framework/functions/wd_customize_layout.php:495 ..
+#: /framework/functions/wd_customize_layout.php:534 ..
+#: /framework/functions/wd_customize_layout.php:572
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:89 ..
+#: /framework/functions/wd_customize_layout.php:141 ..
+#: /framework/functions/wd_customize_layout.php:234 ..
+#: /framework/functions/wd_customize_layout.php:350 ..
+#: /framework/functions/wd_customize_layout.php:389 ..
+#: /framework/functions/wd_customize_layout.php:428 ..
+#: /framework/functions/wd_customize_layout.php:456 ..
+#: /framework/functions/wd_customize_layout.php:467 ..
+#: /framework/functions/wd_customize_layout.php:505 ..
+#: /framework/functions/wd_customize_layout.php:544 ..
+#: /framework/functions/wd_customize_layout.php:582 ../framework/widget/sidebar.
+#: php:6
+msgid "Sidebar"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:99
+msgid "Category Product"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:112
+msgid "Baner Category"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:152
+msgid "Tag Product"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:204
+msgid "SINGE Product"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:248
+msgid "Show Measurement"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:261
+msgid "Content Measurement"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:273
+msgid "Show Shipping & Return"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:286
+msgid "Content Shipping & Return"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:299
+msgid "Show Size Chart"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:312
+msgid "Content Size Chart"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:320
+msgid "Layout Singe"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:332
+msgid "Layout Single"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:360
+msgid "Layout Page Default"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:372
+msgid "Layout Page"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:399 ..
+#: /framework/functions/wd_customize_layout.php:411
+msgid "Layout Archive"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:438 ..
+#: /framework/functions/wd_customize_layout.php:450
+msgid "Layout Seach"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:476
+msgid "Layout Template first"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:488
+msgid "Layout Template First"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:515 ..
+#: /framework/functions/wd_customize_layout.php:527 ..
+#: /framework/functions/wd_customize_layout.php:565
+msgid "Layout Template Second"
+msgstr ""
+
+#: ../framework/functions/wd_customize_layout.php:553
+msgid "Layout Template Third"
+msgstr ""
+
+#: ../framework/functions/wd_customize_reset.php:8
+msgid "Jewelry Reset "
+msgstr ""
+
+#: ../framework/functions/wd_metabox.php:4
+msgid "Config Post"
+msgstr ""
+
+#: ../framework/functions/wd_metabox.php:17
+msgid "Link Video : "
+msgstr ""
+
+#: ../framework/functions/wd_metabox.php:20
+msgid "Link Audio"
+msgstr ""
+
+#: ../framework/functions/wd_metabox_page.php:4
+msgid "Config Page"
+msgstr ""
+
+#: ../framework/functions/wd_metabox_page.php:21
+msgid "Style Header : "
+msgstr ""
+
+#: ../framework/functions/wd_metabox_page.php:27
+msgid "Header 1"
+msgstr ""
+
+#: ../framework/functions/wd_metabox_page.php:30 ..
+#: /framework/functions/wd_metabox_page.php:43 ..
+#: /framework/functions/wd_metabox_page.php:54 ../framework/lib/style_footer.php:20
+msgid "Hidden"
+msgstr ""
+
+#: ../framework/functions/wd_metabox_page.php:37
+msgid "Footer : "
+msgstr ""
+
+#: ../framework/functions/wd_metabox_page.php:48
+msgid "Breadcrumbs: "
+msgstr ""
+
+#: ../framework/functions/wd_metabox_page.php:51
+msgid "Show "
+msgstr ""
+
+#: ../framework/functions/wd_mini_cart.php:14
+#, php-format
+msgid "<a href=\"%s\"><i class=\"fa fa-shopping-cart fa-lg\"></i><span>%s</span></a>"
+msgstr ""
+
+#: ../framework/functions/wd_mini_cart.php:17
+#, php-format
+msgid "<span class=\"text-cart\">Cart <span class=\"text-cart__count\">%s</span> </span>"
+msgstr ""
+
+#: ../framework/functions/wd_mini_cart.php:21
+msgid "you have not items in your shopping cart."
+msgstr ""
+
+#: ../framework/functions/wd_mini_cart.php:57
+msgid "Subtotal"
+msgstr ""
+
+#: ../framework/functions/wd_mini_cart.php:60
+msgid "View Cart"
+msgstr ""
+
+#: ../framework/functions/wd_mini_cart.php:61
+msgid "Checkout"
+msgstr ""
+
+#: ../framework/functions/wd_social.php:11
+msgid "share on facebook"
+msgstr ""
+
+#: ../framework/functions/wd_social.php:15
+msgid "Tweet on Twitter"
+msgstr ""
+
+#: ../framework/functions/wd_social.php:19
+msgid "share on Google +"
+msgstr ""
+
+#: ../framework/functions/wd_social.php:24
+msgid "Pin it"
+msgstr ""
+
+#: ../framework/functions/wd_wishlist.php:45
+msgid "Wishlist"
+msgstr ""
+
+#: ../framework/hook/wd_hook_woo.php:198
+msgid "MEASUREMENTS & SPECS"
+msgstr ""
+
+#: ../framework/hook/wd_hook_woo.php:201 ../framework/hook/wd_hook_woo.php:218 ..
+#: /framework/hook/wd_hook_woo.php:235
+msgid "X"
+msgstr ""
+
+#: ../framework/hook/wd_hook_woo.php:215
+msgid "Shipping & Return"
+msgstr ""
+
+#: ../framework/hook/wd_hook_woo.php:232
+msgid "Size Chart"
+msgstr ""
+
+#: ../framework/lib/footer_vs1.php:37
+msgid "Copyright @ 2015 Jewelry . All Rights Reserved."
+msgstr ""
+
+#: ../framework/lib/footer_vs2.php:64 ../framework/lib/footer_vs3.php:64
+msgid "Copyright @ 2015 Theoakwooden . All Rights Reserved."
+msgstr ""
+
+#: ../framework/lib/style_footer.php:8
+msgid "Column 3"
+msgstr ""
+
+#: ../framework/lib/style_footer.php:12
+msgid "Column 1"
+msgstr ""
+
+#: ../framework/lib/style_footer.php:16
+msgid "Column 2"
+msgstr ""
+
+#: ../framework/lib/style_footer.php:25 ..
+#: /framework/visual_composer/count_down_icon.php:295
+msgid "Black"
+msgstr ""
+
+#: ../framework/lib/style_footer.php:29 ..
+#: /framework/visual_composer/count_down_icon.php:304
+msgid "White"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:11
+msgid "TS Counter No Icon"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:15 ..
+#: /framework/visual_composer/heading.php:19 ..
+#: /framework/visual_composer/portfolio.php:21 ..
+#: /framework/visual_composer/portfolio.php:109 ..
+#: /framework/visual_composer/pricing_table.php:9 ..
+#: /framework/visual_composer/vc_testimonial.php:7 ..
+#: /framework/visual_composer/wd_blogs_style1.php:6 ..
+#: /framework/visual_composer/wd_blogs_style2.php:6 ..
+#: /framework/visual_composer/wd_blog_custom.php:6 ..
+#: /framework/visual_composer/wd_blog_home.php:6 ..
+#: /framework/visual_composer/wd_blog_owl.php:6 ..
+#: /framework/visual_composer/wd_featured.php:6 ..
+#: /framework/visual_composer/wd_member.php:19 ..
+#: /framework/visual_composer/wd_owl_instagarm.php:6 ..
+#: /framework/visual_composer/wd_recent_blogs.php:6 ..
+#: /framework/visual_composer/wd_slider_logo.php:6
+msgid "WPDance Elements"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:16
+msgid "Place an icon counter element"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:24 ..
+#: /framework/visual_composer/heading.php:42 ..
+#: /framework/visual_composer/portfolio.php:37 ..
+#: /framework/visual_composer/pricing_table.php:60 ..
+#: /framework/visual_composer/wd_blogs_style2.php:34
+msgid "Style"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:46
+msgid "Trigger on Viewport"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:49 ..
+#: /framework/visual_composer/count_down_icon.php:71 ..
+#: /framework/visual_composer/count_down_icon.php:125 ..
+#: /framework/visual_composer/count_down_icon.php:138 ..
+#: /framework/visual_composer/count_down_icon.php:184 ..
+#: /framework/visual_composer/count_down_icon.php:251
+msgid "Yes"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:50 ..
+#: /framework/visual_composer/count_down_icon.php:72 ..
+#: /framework/visual_composer/count_down_icon.php:126 ..
+#: /framework/visual_composer/count_down_icon.php:139 ..
+#: /framework/visual_composer/count_down_icon.php:185 ..
+#: /framework/visual_composer/count_down_icon.php:252
+msgid "No"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:53
+msgid "Switch the toggle to trigger the counter on viewport or on pageload."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:59
+msgid "Counter Start Number"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:63
+msgid "Enter the number to start counting from."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:68
+msgid "Use Shortcode for Counter End Number"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:75
+msgid ""
+"Switch the toggle if you want to use a shortcode to generate the end value "
+"for the counter."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:81 ..
+#: /framework/visual_composer/count_down_icon.php:91
+msgid "Counter End Number"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:85
+msgid "Enter the number to count up to."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:94
+msgid "Enter the shortcode that will dynamically generate the counter end value."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:100
+msgid "Counter Number Font Size"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:107
+msgid "Select the font size for the counter number."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:113
+msgid "Counter Number Font Color"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:116
+msgid "Define the font color for counter number."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:122
+msgid "Format Finished Number"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:129
+msgid ""
+"Switch the toggle to add some formatting to the number once the count has "
+"finished."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:135
+msgid "Add '+' Sign to Number"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:142
+msgid ""
+"Switch the toggle to either show or hide a '+' sign after the number once "
+"the count has finished."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:148
+msgid "Thousand Seperator"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:152
+msgid "None"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:153
+msgid "Comma"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:154
+msgid "Dot"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:155
+msgid "Space"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:157
+msgid "Select a character to seperate thousands in the end number."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:163
+msgid "Character(s) before Number"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:166
+msgid "Enter any character to be shown before the nunber (i.e. $)."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:172
+msgid "Character(s) after Number"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:175
+msgid "Enter any character to be shown after the nunber (i.e. %)."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:181
+msgid "Seperator Line"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:188
+msgid "Switch the toggle to either show or hide a seperator."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:194
+msgid "Counter Note"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:198
+msgid "Enter a note about what you are counting."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:203
+msgid "Counter Note Font Size"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:210
+msgid "Select the font size for the counter note."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:216
+msgid "Counter Note Font Color"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:219
+msgid "Define the font color for counter note."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:225
+msgid "Counter Speed"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:232
+msgid "Select the speed in ms for the counter to finish."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:248
+msgid "Use HTML Tooltip"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:255
+msgid ""
+"Switch the toggle if you want to apply a tooltip with HTML code to the "
+"element."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:261 ..
+#: /framework/visual_composer/count_down_icon.php:270
+msgid "Tooltip Content"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:264
+msgid "Enter the tooltip content here (do not use quotation marks)."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:273
+msgid "Enter the tooltip content here (HTML code can be used)."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:280
+msgid "Tooltip Position"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:283
+msgid "Top"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:284
+msgid "Bottom"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:286
+msgid "Select the tooltip position in relation to the image."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:292
+msgid "Tooltip Style"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:296 ../inc/customizer.php:234
+msgid "Gray"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:297
+msgid "Green"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:298
+msgid "Blue"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:299 ../inc/customizer.php:244
+msgid "Red"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:300
+msgid "Orange"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:301 ../inc/customizer.php:254
+msgid "Yellow"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:302
+msgid "Purple"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:303
+msgid "Pink"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:306
+msgid "Select the tooltip style."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:311
+msgid "Tooltip X-Offset"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:318
+msgid "Define an optional X-Offset for the tooltip position."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:323
+msgid "Tooltip Y-Offset"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:330
+msgid "Define an optional Y-Offset for the tooltip position."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:346
+msgid "Link Holder"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:349
+msgid "No Link"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:350
+msgid "Link On Icon / Image"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:351
+msgid "Link On Content"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:352
+msgid "Link On Button"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:353
+msgid "Link On Full Element"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:355
+msgid "Select where the link should be attached to."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:360
+msgid "Link + Title"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:362
+msgid "Provide a link to another site/page for the Icon Counter."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:368
+msgid "Button Color Style"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:372
+msgid "Select the general color style for button."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:378
+msgid "Button Hover Style"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:382
+msgid "Select the general hover style for button."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:388 ..
+#: /framework/visual_composer/pricing_table.php:72
+msgid "Button Text"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:391
+msgid "Enter the text for the button."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:397
+msgid "Button Text Size"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:404
+msgid "Select the font size for the trigger button."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:421 ..
+#: /framework/visual_composer/count_down_icon.php:435
+msgid "Icon / Image Animation"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:430
+msgid "Select the animation for the icon / image."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:454 ..
+#: /framework/visual_composer/vc_testimonial.php:234
+msgid "Margin: Top"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:461 ..
+#: /framework/visual_composer/vc_testimonial.php:241
+msgid "Select the top margin for the element."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:466 ..
+#: /framework/visual_composer/vc_testimonial.php:246
+msgid "Margin: Bottom"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:473 ..
+#: /framework/visual_composer/vc_testimonial.php:253
+msgid "Select the bottom margin for the element."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:478 ..
+#: /framework/visual_composer/vc_testimonial.php:258
+msgid "Define ID Name"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:481 ..
+#: /framework/visual_composer/vc_testimonial.php:261
+msgid "Enter an unique ID for the element."
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:486 ..
+#: /framework/visual_composer/vc_testimonial.php:266
+msgid "Extra Class Name"
+msgstr ""
+
+#: ../framework/visual_composer/count_down_icon.php:489 ..
+#: /framework/visual_composer/vc_testimonial.php:269
+msgid "Enter a class name for the element."
+msgstr ""
+
+#: ../framework/visual_composer/heading.php:16
+msgid "Heading"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio.php:18
+msgid "WD Portfolio"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio.php:28 ../framework/visual_composer/woo-
+#: products.php:36 ../framework/visual_composer/woo_product_cat.php:36 ..
+#: /framework/visual_composer/woo_product_feature.php:28 ..
+#: /framework/visual_composer/woo_product_sale.php:26
+msgid "Columns"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio.php:49
+msgid "Show Filter"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio.php:60
+msgid "Show Title"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio.php:72
+msgid "Show Description"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio.php:84
+msgid "Show Navigation"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio.php:95 ..
+#: /framework/visual_composer/portfolio.php:116 ..
+#: /framework/visual_composer/wd_member.php:26 ../framework/widget/customrecent.
+#: php:172
+msgid "Limit"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio.php:106
+msgid "WD Portfolio Slider"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio_custom.php:8
+msgid "Portfolio Custom Image"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio_custom.php:17
+msgid "Slug "
+msgstr ""
+
+#: ../framework/visual_composer/portfolio_custom.php:26
+msgid "Type Image"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio_custom.php:38 ..
+#: /framework/visual_composer/pricing_table.php:78 ..
+#: /framework/visual_composer/wd_image.php:7 ..
+#: /framework/visual_composer/wd_image.php:15 ..
+#: /framework/visual_composer/woo_product_image.php:15
+msgid "Image"
+msgstr ""
+
+#: ../framework/visual_composer/portfolio_custom.php:41 ..
+#: /framework/visual_composer/woo-products.php:64 ..
+#: /framework/visual_composer/woo_product_cat.php:64 ..
+#: /framework/visual_composer/woo_product_feature.php:56 ..
+#: /framework/visual_composer/woo_product_slider.php:65
+msgid "Designates the ascending or descending order."
+msgstr ""
+
+#: ../framework/visual_composer/portfolio_custom.php:46
+msgid "Width "
+msgstr ""
+
+#: ../framework/visual_composer/portfolio_custom.php:55
+msgid "Height "
+msgstr ""
+
+#: ../framework/visual_composer/portfolio_custom.php:64
+msgid "Number Word "
+msgstr ""
+
+#: ../framework/visual_composer/pricing_table.php:6
+msgid "Pricing Table"
+msgstr ""
+
+#: ../framework/visual_composer/pricing_table.php:16 ..
+#: /framework/widget/customrecent.php:159 ../framework/widget/product_category.
+#: php:122 ../framework/widget/product_selling.php:104 ..
+#: /framework/widget/wd_socila.php:27
+msgid "Title"
+msgstr ""
+
+#: ../framework/visual_composer/pricing_table.php:18
+msgid "Basic Plan"
+msgstr ""
+
+#: ../framework/visual_composer/pricing_table.php:25 ../woocommerce/single-
+#: product/add-to-cart/variable.php:99
+msgid "Price"
+msgstr ""
+
+#: ../framework/visual_composer/pricing_table.php:34
+msgid "Currency"
+msgstr ""
+
+#: ../framework/visual_composer/pricing_table.php:43
+msgid "Price Period"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:3
+msgid "WD Testimonials "
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:8
+msgid "Place a Testimonial Slider (by Category)"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:23
+msgid "Testimonial Categories"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:32
+msgid "Please select the testimonial categories you want to use for the slider."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:36
+msgid "Design"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:39
+msgid "Style 1"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:40
+msgid "Style 2"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:41
+msgid "Style 3"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:42
+msgid "Style 4"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:50
+msgid "Show Autor Name"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:54
+msgid "Switch the toggle if you want to show the author name for the testimonial."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:58
+msgid "Show Avatar"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:62
+msgid "Switch the toggle if you want to show the user avatar for the testimonial."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:77 ..
+#: /framework/visual_composer/vc_testimonial.php:91
+msgid "In-Animation Type"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:85
+msgid "Select the CSS3 in-animation you want to apply to the slider."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:102 ..
+#: /framework/visual_composer/vc_testimonial.php:116
+msgid "Out-Animation Type"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:110
+msgid "Select the CSS3 out-animation you want to apply to the slider."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:126
+msgid "Animate on Mobile"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:129
+msgid "Switch the toggle if you want to show the CSS3 animations on mobile devices."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:134
+msgid "Auto-Height"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:138
+msgid "Switch the toggle if you want the slider to auto-adjust its height."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:143
+msgid "RTL Page"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:146
+msgid ""
+"Switch the toggle if the slider is used on a page with RTL (Right-To-Left) "
+"alignment."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:151
+msgid "Auto-Play"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:155
+msgid "Switch the toggle if you want the auto-play the slider on page load."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:160
+msgid "Show Play / Pause"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:163
+msgid ""
+"Switch the toggle if you want to show a play / pause button to control the "
+"autoplay."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:168
+msgid "Show Progressbar"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:171
+msgid "Switch the toggle if you want to show a progressbar during auto-play."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:177
+msgid "Progressbar Color"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:180
+msgid "Define the color of the animated progressbar."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:186
+msgid "Auto-Play Speed"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:193
+msgid "Define the speed used to auto-play the slider."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:199
+msgid "Stop on Hover"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:202
+msgid ""
+"Switch the toggle if you want the stop the auto-play while hovering over the "
+"slider."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:208
+msgid "Show Top Navigation"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:211
+msgid ""
+"Switch the toggle if you want to show left/right navigation buttons for the "
+"slider."
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:216
+msgid "Show Dot Navigation"
+msgstr ""
+
+#: ../framework/visual_composer/vc_testimonial.php:219
+msgid ""
+"Switch the toggle if you want to show dot navigation buttons below the "
+"slider."
+msgstr ""
+
+#: ../framework/visual_composer/wd_blogs_style1.php:3
+msgid "WD Blogs"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blogs_style1.php:10 ..
+#: /framework/visual_composer/wd_blogs_style2.php:10 ..
+#: /framework/visual_composer/wd_blog_custom.php:67 ..
+#: /framework/visual_composer/wd_blog_home.php:10 ..
+#: /framework/visual_composer/wd_blog_owl.php:10 ..
+#: /framework/visual_composer/wd_recent_blogs.php:10
+msgid "Display Stick Post"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blogs_style1.php:14 ..
+#: /framework/visual_composer/wd_blogs_style2.php:14 ..
+#: /framework/visual_composer/wd_blog_custom.php:71 ..
+#: /framework/visual_composer/wd_blog_home.php:14 ..
+#: /framework/visual_composer/wd_blog_owl.php:14 ..
+#: /framework/visual_composer/wd_recent_blogs.php:13
+msgid "Position dispaly Stick Post "
+msgstr ""
+
+#: ../framework/visual_composer/wd_blogs_style1.php:18 ..
+#: /framework/visual_composer/wd_blogs_style2.php:18 ..
+#: /framework/visual_composer/wd_blog_custom.php:75 ..
+#: /framework/visual_composer/wd_blog_home.php:18 ..
+#: /framework/visual_composer/wd_blog_owl.php:18 ..
+#: /framework/visual_composer/wd_featured.php:10 ..
+#: /framework/visual_composer/wd_member.php:34 ..
+#: /framework/visual_composer/wd_recent_blogs.php:31
+msgid "OrderBy"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blogs_style1.php:26 ..
+#: /framework/visual_composer/wd_blogs_style2.php:26 ..
+#: /framework/visual_composer/wd_blog_custom.php:83 ..
+#: /framework/visual_composer/wd_blog_home.php:26 ..
+#: /framework/visual_composer/wd_blog_owl.php:26 ..
+#: /framework/visual_composer/wd_featured.php:17 ..
+#: /framework/visual_composer/wd_member.php:42 ..
+#: /framework/visual_composer/wd_recent_blogs.php:39
+msgid "Order"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blogs_style2.php:3 ..
+#: /framework/visual_composer/wd_blog_home.php:3
+msgid "WD Blogs Style2"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blogs_style2.php:42 ..
+#: /framework/visual_composer/wd_blog_custom.php:43 ..
+#: /framework/visual_composer/wd_blog_home.php:34 ..
+#: /framework/visual_composer/wd_featured.php:24
+msgid "Coloumn"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:3
+msgid "WD Blogs Custom"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:10
+msgid "Show Post"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:13
+msgid "Show Post of Category"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:17 ..
+#: /framework/visual_composer/wd_slider_logo.php:24 ..
+#: /framework/visual_composer/woo_product_cat.php:17 ..
+#: /framework/visual_composer/woo_product_slider.php:16 ..
+#: /framework/widget/product_category.php:130
+msgid "Category"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:21
+msgid "Categoty of Post"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:25
+msgid "Show Childern Category "
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:29
+msgid "Show all post in Childern Category"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:33
+msgid "Slug"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:51 ..
+#: /framework/visual_composer/wd_blog_owl.php:34 ..
+#: /framework/visual_composer/wd_featured.php:31 ..
+#: /framework/widget/product_category.php:126 ../framework/widget/product_selling.
+#: php:108
+msgid "Number"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:55 ..
+#: /framework/visual_composer/wd_featured.php:34
+msgid "Show number product in the page"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:59
+msgid "Offset"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:91
+msgid "Show Link Home "
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:94
+msgid "Show Link Home"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:98
+msgid "Show Thumbnail "
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:101
+msgid "Show Thumbnail"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:105
+msgid "Show Date/comment/author "
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:108
+msgid "Show Date/comment/author"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:112
+msgid "Show Excerpt "
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:115
+msgid "Show Excerpt"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:119
+msgid "Excerpt Words"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_custom.php:122
+msgid "Show Excerpt Words"
+msgstr ""
+
+#: ../framework/visual_composer/wd_blog_owl.php:3
+msgid "WD Blogs Owl"
+msgstr ""
+
+#: ../framework/visual_composer/wd_featured.php:3
+msgid "FEATURE NEW "
+msgstr ""
+
+#: ../framework/visual_composer/wd_image.php:39
+msgid "Height"
+msgstr ""
+
+#: ../framework/visual_composer/wd_image.php:49
+msgid "Width"
+msgstr ""
+
+#: ../framework/visual_composer/wd_image.php:59
+msgid "Position Content"
+msgstr ""
+
+#: ../framework/visual_composer/wd_image.php:73
+msgid "Style Image"
+msgstr ""
+
+#: ../framework/visual_composer/wd_image.php:87
+msgid "Content Image"
+msgstr ""
+
+#: ../framework/visual_composer/wd_member.php:16
+msgid "WD Temamate"
+msgstr ""
+
+#: ../framework/visual_composer/wd_owl_instagarm.php:3
+msgid "Image instagarm"
+msgstr ""
+
+#: ../framework/visual_composer/wd_owl_instagarm.php:10
+msgid "username"
+msgstr ""
+
+#: ../framework/visual_composer/wd_owl_instagarm.php:17
+msgid "total image"
+msgstr ""
+
+#: ../framework/visual_composer/wd_owl_instagarm.php:24
+msgid "number show"
+msgstr ""
+
+#: ../framework/visual_composer/wd_recent_blogs.php:3
+msgid "WD Recent Blogs"
+msgstr ""
+
+#: ../framework/visual_composer/wd_recent_blogs.php:17
+msgid "Number Blogs"
+msgstr ""
+
+#: ../framework/visual_composer/wd_recent_blogs.php:24
+msgid "Number Words"
+msgstr ""
+
+#: ../framework/visual_composer/wd_slider_logo.php:3
+msgid "WD Slider Logo"
+msgstr ""
+
+#: ../framework/visual_composer/wd_slider_logo.php:10
+msgid "Total Number"
+msgstr ""
+
+#: ../framework/visual_composer/wd_slider_logo.php:17
+msgid "Number Item"
+msgstr ""
+
+#: ../framework/visual_composer/wd_slider_logo.php:27
+msgid "category of logo"
+msgstr ""
+
+#: ../framework/visual_composer/woo-products.php:8
+msgid "Products"
+msgstr ""
+
+#: ../framework/visual_composer/woo-products.php:17
+msgid "Skus"
+msgstr ""
+
+#: ../framework/visual_composer/woo-products.php:26
+msgid "IDs"
+msgstr ""
+
+#: ../framework/visual_composer/woo-products.php:45 ..
+#: /framework/visual_composer/woo_product_cat.php:45 ..
+#: /framework/visual_composer/woo_product_feature.php:37 ..
+#: /framework/visual_composer/woo_product_slider.php:46
+msgid "Order By"
+msgstr ""
+
+#: ../framework/visual_composer/woo-products.php:58 ..
+#: /framework/visual_composer/woo_product_cat.php:58 ..
+#: /framework/visual_composer/woo_product_feature.php:50 ..
+#: /framework/visual_composer/woo_product_slider.php:59
+msgid "Order way"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product.php:17
+msgid "ID"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product.php:26
+msgid "Position Thumbnail"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product.php:36
+msgid "Background"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product_cat.php:8
+msgid "Products Category"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product_cat.php:26 ..
+#: /framework/visual_composer/woo_product_feature.php:18 ..
+#: /framework/visual_composer/woo_product_sale.php:16 ..
+#: /framework/visual_composer/woo_product_slider.php:37
+msgid "Number Product"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product_feature.php:8
+msgid "Products Features"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product_image.php:7
+msgid "Woo Product Image"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product_image.php:23
+msgid "ID Product"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product_image.php:26
+msgid "enter id product"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product_sale.php:7
+msgid "Products Sale Month"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product_slider.php:8
+msgid "Products Slider"
+msgstr ""
+
+#: ../framework/visual_composer/woo_product_slider.php:25
+msgid "Feature Product"
+msgstr ""
+
+#: ../framework/widget/customrecent.php:5 ../framework/widget/product_selling.php:5
+msgid "This widget show recent post in each category you select."
+msgstr ""
+
+#: ../framework/widget/customrecent.php:6
+msgid "WD - Recent Posts"
+msgstr ""
+
+#: ../framework/widget/customrecent.php:16 ../framework/widget/product_selling.
+#: php:15
+msgid "Recent"
+msgstr ""
+
+#: ../framework/widget/customrecent.php:68 ../framework/widget/product_category.
+#: php:68 ../framework/widget/product_selling.php:54
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../framework/widget/customrecent.php:164
+msgid "Type to show"
+msgstr ""
+
+#: ../framework/widget/customrecent.php:178
+msgid "Show thumbnail image"
+msgstr ""
+
+#: ../framework/widget/customrecent.php:183
+msgid "Show post title"
+msgstr ""
+
+#: ../framework/widget/customrecent.php:188
+msgid "Show date time"
+msgstr ""
+
+#: ../framework/widget/customrecent.php:192
+msgid "Show author"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:9
+msgid "Display Social Profiles"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:11
+msgid "WD - Social Profiles"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:38
+msgid "Become our fan"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:41 ../framework/widget/ew_social.php:50
+msgid "Follow us"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:44
+msgid "Get updates"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:47
+msgid "See Us"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:53
+msgid "Subscribe our channel"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:56
+msgid "See us"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:89 ../framework/widget/ew_subscriptions.php:69
+msgid "Enter your title"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:92
+msgid "Enter your Facebook ID"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:95
+msgid "Enter your Twitter ID"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:98
+msgid "Enter your Google+ ID"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:101
+msgid "Enter your Pinterest ID"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:104
+msgid "Enter your Instagram"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:107
+msgid "Enter your Youtube"
+msgstr ""
+
+#: ../framework/widget/ew_social.php:110
+msgid "Enter your Linkedin"
+msgstr ""
+
+#: ../framework/widget/ew_subscriptions.php:9
+msgid "Display Subscriptions Form"
+msgstr ""
+
+#: ../framework/widget/ew_subscriptions.php:11
+msgid "WD - Feedburner Subscriptions"
+msgstr ""
+
+#: ../framework/widget/ew_subscriptions.php:37
+msgid "Put Enter your email"
+msgstr ""
+
+#: ../framework/widget/ew_subscriptions.php:72
+msgid "Enter your Intro Text"
+msgstr ""
+
+#: ../framework/widget/ew_subscriptions.php:74
+msgid "Enter your Button"
+msgstr ""
+
+#: ../framework/widget/ew_subscriptions.php:76
+msgid "Enter your Feedburner ID"
+msgstr ""
+
+#: ../framework/widget/flickr.php:10
+msgid "WD - Flickr"
+msgstr ""
+
+#: ../framework/widget/flickr.php:32
+msgid "Gallery On Flickr"
+msgstr ""
+
+#: ../framework/widget/flickr.php:134
+msgid "Number:"
+msgstr ""
+
+#: ../framework/widget/flickr.php:142
+msgid "Sorting:"
+msgstr ""
+
+#: ../framework/widget/flickr.php:144
+msgid "Latest"
+msgstr ""
+
+#: ../framework/widget/flickr.php:145
+msgid "Random"
+msgstr ""
+
+#: ../framework/widget/flickr.php:149
+msgid "Size:"
+msgstr ""
+
+#: ../framework/widget/flickr.php:151
+msgid "Large Square"
+msgstr ""
+
+#: ../framework/widget/flickr.php:152
+msgid "Medium"
+msgstr ""
+
+#: ../framework/widget/flickr.php:153
+msgid "Thumbnail"
+msgstr ""
+
+#: ../framework/widget/product_category.php:5
+msgid "This widget show product in each category you select."
+msgstr ""
+
+#: ../framework/widget/product_category.php:6
+msgid "WD PRODUCT CATEGORY"
+msgstr ""
+
+#: ../framework/widget/product_selling.php:6
+msgid "WD -Top Sales"
+msgstr ""
+
+#: ../framework/widget/sidebar.php:8 ../framework/widget/sidebar.php:17 ..
+#: /framework/widget/sidebar.php:26 ../framework/widget/sidebar.php:35
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: ../framework/widget/sidebar.php:15
+msgid "Sidebar 2"
+msgstr ""
+
+#: ../framework/widget/sidebar.php:24
+msgid "Sidebar 3"
+msgstr ""
+
+#: ../framework/widget/sidebar.php:33
+msgid "Sidebar 4"
+msgstr ""
+
+#: ../framework/widget/sidebar.php:42
+msgid "Widget Top Header 1 "
+msgstr ""
+
+#: ../framework/widget/sidebar.php:44 ../framework/widget/sidebar.php:53
+msgid "Appears at the header of the content on posts and pages."
+msgstr ""
+
+#: ../framework/widget/sidebar.php:51
+msgid "Wiget Top Header 2"
+msgstr ""
+
+#: ../framework/widget/sidebar.php:61
+msgid "News Letter "
+msgstr ""
+
+#: ../framework/widget/sidebar.php:63 ../framework/widget/sidebar.php:73 ..
+#: /framework/widget/sidebar.php:82 ../framework/widget/sidebar.php:91 ..
+#: /framework/widget/sidebar.php:100 ../framework/widget/sidebar.php:109
+msgid "Appears at the Footer of the content on posts and pages."
+msgstr ""
+
+#: ../framework/widget/sidebar.php:71
+msgid "Wiget Footer 1"
+msgstr ""
+
+#: ../framework/widget/sidebar.php:80
+msgid "Wiget Footer 2"
+msgstr ""
+
+#: ../framework/widget/sidebar.php:89
+msgid "Wiget Footer 3"
+msgstr ""
+
+#: ../framework/widget/sidebar.php:98
+msgid "Wiget Footer 4"
+msgstr ""
+
+#: ../framework/widget/sidebar.php:107
+msgid "Payment "
+msgstr ""
+
+#: ../framework/widget/wd_socila.php:8
+msgid "WD - Social "
+msgstr ""
+
+#: ../framework/widget/wd_socila.php:9
+msgid "show icon follow"
+msgstr ""
+
+#: ../framework/widget/wd_socila.php:30
+msgid "Url Facebook"
+msgstr ""
+
+#: ../framework/widget/wd_socila.php:33
+msgid "Url Twitter"
+msgstr ""
+
+#: ../framework/widget/wd_socila.php:36
+msgid "Url Google"
+msgstr ""
+
+#: ../framework/widget/wd_socila.php:39
+msgid "Url Pin"
+msgstr ""
+
+#: ../framework/widget/wd_socila.php:66
+msgid "Facebook"
+msgstr ""
+
+#: ../framework/widget/wd_socila.php:69
+msgid "Twitter"
+msgstr ""
+
+#: ../framework/widget/wd_socila.php:72
+msgid "Pinterest"
+msgstr ""
+
+#: ../framework/widget/wd_socila.php:75
+msgid "Google Plus"
+msgstr ""
+
+#: ../functions.php:81
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:82
+msgid "Social Menu"
+msgstr ""
+
+#: ../functions.php:83
+msgid "Mobile Menu"
+msgstr ""
+
+#: ../functions.php:84
+msgid "Menu Height"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Raleway, translate this to 'off'. Do not translate into your own language.
+#: ../functions.php:159
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Lato, translate this to 'off'. Do not translate into your own language.
+#: ../functions.php:164
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Montserrat, translate this to 'off'. Do not translate into your own language.
+#: ../functions.php:169
+msgctxt "Montserrat font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Playfair Display, translate this to 'off'. Do not translate into your own language.
+#: ../functions.php:174
+msgctxt "Playfair Display font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Playfair Display, translate this to 'off'. Do not translate into your own language.
+#: ../functions.php:179
+msgctxt "Muli font: on or off"
+msgid "on"
+msgstr ""
+
+#: ../functions.php:252
+msgid "expand child menu"
+msgstr ""
+
+#: ../functions.php:253
+msgid "collapse child menu"
+msgstr ""
+
+#: ../image.php:22
+msgid "Previous Image"
+msgstr ""
+
+#: ../image.php:23
+msgid "Next Image"
+msgstr ""
+
+#: ../image.php:54 ../page.php:37 ../template-parts/content-single.php:47 ..
+#: /template-parts/content.php:43 ../templates/template-custom1.php:33 ..
+#: /templates/template-custom2.php:33 ../templates/template-custom3.php:33
+msgid "Pages:"
+msgstr ""
+
+#: ../image.php:71
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr ""
+
+#. translators: %s: Name of current post
+#. translators: %s: Name of current post
+#. translators: %s: Name of current post
+#. translators: %s: Name of current post
+#. translators: %s: Name of current post
+#: ../image.php:82 ../page.php:51 ../templates/template-custom1.php:47 ..
+#: /templates/template-custom2.php:47 ../templates/template-custom3.php:47
+#, php-format
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: ../image.php:100
+msgctxt "Parent post link"
+msgid ""
+"<span class=\"meta-nav\">Published in</span><span class=\"post-"
+"title\">%title</span>"
+msgstr ""
+
+#: ../inc/back-compat.php:41 ../inc/back-compat.php:53 ../inc/back-compat.php:68
+#, php-format
+msgid ""
+"wdjewelryrequires at least WordPress version 4.4. You are running version %s."
+" Please upgrade and try again."
+msgstr ""
+
+#: ../inc/customizer.php:115
+msgid "Base Color Scheme"
+msgstr ""
+
+#: ../inc/customizer.php:130
+msgid "Page Background Color"
+msgstr ""
+
+#: ../inc/customizer.php:145
+msgid "Link Color"
+msgstr ""
+
+#: ../inc/customizer.php:157
+msgid "Main Text Color"
+msgstr ""
+
+#: ../inc/customizer.php:169
+msgid "Secondary Text Color"
+msgstr ""
+
+#: ../inc/customizer.php:224
+msgid "Dark"
+msgstr ""
+
+#: ../inc/template-tags.php:25
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr ""
+
+#: ../inc/template-tags.php:38
+msgctxt "Used before post format."
+msgid "Format"
+msgstr ""
+
+#: ../inc/template-tags.php:50
+#, php-format
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:79
+msgctxt "Used before publish date."
+msgid "Posted on"
+msgstr ""
+
+#: ../inc/template-tags.php:95 ../inc/template-tags.php:103
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ""
+
+#: ../inc/template-tags.php:98
+msgctxt "Used before category names."
+msgid "Categories"
+msgstr ""
+
+#: ../inc/template-tags.php:106
+msgctxt "Used before tag names."
+msgid "Tags"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: ../inc/template-tags.php:180
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: ../search.php:29
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../searchform.php:12 ../searchform.php:13
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: ../searchform.php:13
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: ../searchform.php:15
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: ../template-parts/biography.php:28
+msgid "Author:"
+msgstr ""
+
+#: ../template-parts/biography.php:33
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../template-parts/content-custom.php:18
+msgid "[...]"
+msgstr ""
+
+#: ../template-parts/content-custom.php:65
+msgid "Read More"
+msgstr ""
+
+#: ../template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#: ../template-parts/content-none.php:16
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../template-parts/content-none.php:18
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../template-parts/content-none.php:21
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../template-parts/content-search.php:23 ../template-parts/content.php:47
+msgid "Tags:"
+msgstr ""
+
+#: ../template-parts/content-search.php:24 ../template-parts/content.php:48
+msgid ", "
+msgstr ""
+
+#: ../template-parts/content-search.php:26 ../template-parts/content.php:50
+msgid "Category :"
+msgstr ""
+
+#: ../template-parts/content-single.php:33
+msgid "home"
+msgstr ""
+
+#: ../template-parts/content.php:39
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../templates/related_posts.php:49
+msgid "HOME"
+msgstr ""
+
+#. Name of the template
+msgid "Custom First"
+msgstr ""
+
+#. Name of the template
+msgid "Custom Second"
+msgstr ""
+
+#. Name of the template
+msgid "Custom Third"
+msgstr ""
+
+#: ../woocommerce/checkout/form-login.php:26
+msgid "Returning customer?"
+msgstr ""
+
+#: ../woocommerce/checkout/form-login.php:27
+msgid "Click here to login"
+msgstr ""
+
+#: ../woocommerce/checkout/form-login.php:34
+msgid ""
+"If you have shopped with us before, please enter your details in the boxes "
+"below. If you are a new customer, please proceed to the Billing &amp; "
+"Shipping section."
+msgstr ""
+
+#: ../woocommerce/checkout/form-pay.php:29
+msgid "Qty"
+msgstr ""
+
+#: ../woocommerce/checkout/form-pay.php:30
+msgid "Totals"
+msgstr ""
+
+#: ../woocommerce/checkout/form-pay.php:68
+msgid ""
+"Sorry, it seems that there are no available payment methods for your "
+"location. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
+msgstr ""
+
+#: ../woocommerce/checkout/form-shipping.php:40
+msgid "Ship to a different address?"
+msgstr ""
+
+#: ../woocommerce/checkout/form-shipping.php:66 ../woocommerce/single-
+#: product/tabs/additional-information.php:25
+msgid "Additional Information"
+msgstr ""
+
+#: ../woocommerce/global/form-login.php:34
+msgid "Username or email"
+msgstr ""
+
+#: ../woocommerce/global/quantity-input.php:25
+msgid "-"
+msgstr ""
+
+#: ../woocommerce/global/quantity-input.php:27
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: ../woocommerce/global/quantity-input.php:29
+msgid "+"
+msgstr ""
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:34
+msgid "Please select the required options to display prices"
+msgstr ""
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:56
+msgid "Choose an option"
+msgstr ""
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:92
+msgid "Clear selection"
+msgstr ""
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:108
+msgid "Quantity"
+msgstr ""
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:113 ..
+#: /woocommerce/single-product/add-to-cart/variable.php:127
+msgid "Add to cart"
+msgstr ""
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:139
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: ../woocommerce/single-product/meta.php:35
+msgid "SKU:"
+msgstr ""
+
+#: ../woocommerce/single-product/meta.php:35
+msgid "N/A"
+msgstr ""
+
+#: ../woocommerce/single-product/meta.php:39
+msgid "Product Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../woocommerce/single-product/meta.php:41
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../woocommerce/single-product/product-attributes.php:38
+msgid "Weight"
+msgstr ""
+
+#: ../woocommerce/single-product/product-attributes.php:45
+msgid "Dimensions"
+msgstr ""
+
+#: ../woocommerce/single-product/product-image.php:44
+msgid "Placeholder"
+msgstr ""
+
+#: ../woocommerce/single-product/rating.php:36
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: ../woocommerce/single-product/rating.php:38
+#, php-format
+msgid "out of %s5%s"
+msgstr ""
+
+#: ../woocommerce/single-product/rating.php:39
+#, php-format
+msgid "based on %s customer rating"
+msgid_plural "based on %s customer ratings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../woocommerce/single-product/rating.php:42
+#, php-format
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../woocommerce/single-product/related.php:51
+msgid "Related Products"
+msgstr ""
+
+#: ../woocommerce/single-product/review-meta.php:28
+msgid "Your comment is awaiting approval"
+msgstr ""
+
+#: ../woocommerce/single-product/review-meta.php:35
+msgid "verified owner"
+msgstr ""
+
+#: ../woocommerce/single-product/review-rating.php:28
+#, php-format
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: ../woocommerce/single-product/review-rating.php:29
+msgid "out of 5"
+msgstr ""
+
+#: ../woocommerce/single-product/sale-flash.php:28
+msgid "Sale!"
+msgstr ""
+
+#: ../woocommerce/single-product/tabs/description.php:25
+msgid "Product Description"
+msgstr ""
+
+#: ../woocommerce/single-product/up-sells.php:48
+msgid "You may also like&hellip;"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:34
+#, php-format
+msgid "based on %s review"
+msgid_plural "based on %s review"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../woocommerce/single-product-reviews.php:37
+msgid "Reviews"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:53
+msgid "Add a review"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:57
+msgid "Name"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:59
+msgid "Email"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:68
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:72
+msgid "Your Rating"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:73
+msgid "Rate&hellip;"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:74
+msgid "Perfect"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:75
+msgid "Good"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:76
+msgid "Average"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:77
+msgid "Not that bad"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:78
+msgid "Very Poor"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:82
+msgid "Your Review"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:91
+msgid "Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:113
+msgid "There are no reviews yet."
+msgstr ""
+
+#. Name of the theme
+msgid "wdjewelry"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "/wdjewelry/"
+msgstr ""
+
+#. Description of the theme
+msgid "our default theme lets you create a strongest website with many features."
+msgstr ""
+
+#. Author of the theme
+msgid "Wpdance team"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://wpdance.com/"
+msgstr ""

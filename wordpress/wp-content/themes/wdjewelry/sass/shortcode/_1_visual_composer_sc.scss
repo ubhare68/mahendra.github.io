@@ -1,0 +1,56 @@
+/* ============================================== 
+   = VISUAL COMPOSER SC */
+   
+/* -------------- SC Heading */
+.vc_custom_heading {
+	@include title_style(false,true,false,false,false,false,false);
+}
+
+/* -------------- SC Brand Slider */
+.ts-vcsc-logos-layout-wrapper {
+	div.nchgrid-item {
+		&.nchgrid-tile {
+			&.nch-logo-image {
+				border:0;
+			}
+		}
+	}
+} 
+
+/* ------------- SC Team */
+div#wd-teammate-style-1 {
+	@include team(true,false,false);
+}
+div.ts-team2 {
+	@include team(false,true,false);
+}
+div.ts-team3 {
+	@include team(false,false,true);
+}
+
+/* -------------- SC Pricing Table */
+.wd_pricing_style_image {
+	@include pricing_table(true,false);
+}
+.wd_princing_style_text {
+	@include pricing_table(false,true);
+}
+
+/* -------------- SC TS TAB */
+div.vc_tta-tabs {
+	.vc_tta-tabs-list {
+		@extend %tab_title;
+	}
+}
+.funiture-tab {
+	.vc_tta-tabs {
+		.vc_tta-tabs-list {
+			@extend %tab_title;
+		}
+	}
+}
+
+/* -------------- SC TS TOGGLE */
+.vc_toggle {
+	
+}

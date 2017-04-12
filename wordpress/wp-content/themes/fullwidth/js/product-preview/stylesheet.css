@@ -1,0 +1,68 @@
+
+.gallery {
+}
+.gallery .previews, .gallery .full, .gallery .desc {
+float: left;
+margin-right: 10px;
+}
+.gallery .desc, .gallery .full {
+	/*width:400px;*/
+font-size: 12px;
+}
+
+.gallery .previews a {
+display: block;
+margin-bottom: 10px;
+cursor: pointer;
+}
+
+
+.gallery .previews.two {
+	width:450px;
+}
+
+.gallery .previews.two a {
+	float:left;
+	margin-right:8px;
+	margin-top:15px;
+}
+
+
+
+.gallery .full, .gallery .full img {
+height: 580px;
+}
+.gallery .previews a, .gallery .full {
+border: 1px solid #eaeaea;
+}
+.gallery .previews a:hover, .gallery .previews a.selected {
+border: 1px solid #fdce16;
+}
+.gallery .full img:hover {
+cursor: pointer;
+}
+.clearfix:after {
+content: ".";
+visibility: hidden;
+display: block;
+height: 0;
+clear: both;
+}
+
+
+.gallery .previews.two {
+	width:450px;
+}
+
+.gallery .previews.two a {
+	float:left;
+	margin-right:8px;
+	margin-top:15px;
+}
+
+@media only screen and (max-width: 479px){
+	
+.gallery .full, .gallery .full img {
+    height: 410px;
+}
+	}

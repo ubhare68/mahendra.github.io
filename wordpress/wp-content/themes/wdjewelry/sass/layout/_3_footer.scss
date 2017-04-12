@@ -1,0 +1,112 @@
+
+/* ============================================== 
+   = FOOTER */
+   
+.site-footer {
+	position:relative;
+	z-index:1;
+}
+
+/* FOOTER CONTENT TOP */
+.footer-content-top {
+	text-align:center;
+	padding:50px 0;
+	@extend .footer_top_bg;
+	@extend .footer_top_border;
+	@include text_style(false,false,false,true,false,false);
+	@include background_style(false,false,false,false,true,false,false,false,false,false);
+	* {
+		@include border_style(false,false,false,true,false,false);
+	}
+	h1,h2,h3,h4,h5,h6,.widget-title,.widgettitle,.widget-title,.widgettitle {
+		@include title_style(false,false,false,true,false,false,false);
+		a {
+			font-size:100%;
+		}
+	}
+	a {
+		@include link_style(false,false,false,true,false);
+	}
+	.widget {
+		margin:40px 0 0;
+		&:first-child {
+			margin:0;
+		}
+	}
+	.subscribe_widget {
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
+/* FOOTER MAIN */
+.footer-content-main {
+	padding:20px 0 45px;
+	border-width:1px 0 0;
+	@extend .footer_main_bg;
+	@extend .footer_main_border;
+	@include text_style(false,false,false,false,true,false);
+	@include background_style(false,false,false,false,false,true,false,false,false,false);
+	* {
+		@include border_style(false,false,false,false,true,false);
+	}
+	h1,h2,h3,h4,h5,h6,.widget-title,.widgettitle {
+		@include title_style(false,false,false,false,true,false,false);
+		a {
+			font-size:100%!important;
+		}
+	}
+	a {
+		@include link_style(false,false,false,false,true,false);
+	}
+}
+div[class^="footer-content-main__"] {
+	margin:35px 0 0;
+}
+
+/* FOOTER BOTTOM */
+.footer-content-bottom {
+	border-width:1px 0 0;
+	padding:0 0 20px;
+	@media screen and (max-width: $screen-xs-max) { 
+		padding:0;
+	}
+	@extend .footer_bottom_bg;
+	@extend .footer_bottom_border;
+	@include text_style(false,false,false,false,false,true);
+	@include background_style(false,false,false,false,false,false,true,false,false,false);
+	* {
+		@include border_style(false,false,false,false,false,true);
+	}
+	h1,h2,h3,h4,h5,h6,.widget-title,.widgettitle {
+		@include title_style(false,false,false,false,false,true,false);
+		a {
+			font-size:100%!important;
+		}
+	}
+	a {
+		@include link_style(false,false,false,false,false,true);
+	}
+	.copyright,.widget-payment {
+		padding:30px 0 0;
+		@media screen and (max-width: $screen-xs ) {
+			width:100%;
+		}
+		@media screen and (max-width: $screen-xs-max) {
+			padding:20px 0 0;
+		}
+	}
+	.widget-payment{
+		text-align:right;
+		img {
+			margin:0;
+		}
+		@media screen and (max-width: $screen-xs ) {
+			width:100%;
+			text-align:left;
+		}
+	}
+	.payments {
+		display:inline-block;
+	}
+}

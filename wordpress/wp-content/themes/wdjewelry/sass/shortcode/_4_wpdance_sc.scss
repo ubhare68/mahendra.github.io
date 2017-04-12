@@ -1,0 +1,85 @@
+
+/* ============================================== 
+   = BLOG SHORTCODE */
+   
+/* ------------ Wd Recent blog */
+.recent_blogs_horizontal_container {
+	padding:30px 0 0;
+	margin:30px 0 0;
+	border-width:1px 0 0;
+	@extend %clearlist;
+	&:first-child {
+		border-width:0;
+		margin-top:0;
+		padding-top:0;
+	}
+	.rb_item {
+		@include wp_table();
+		.rb_row_left{
+			display:table-cell;
+			width:100px;
+			text-align:center;
+			text-transform:uppercase;
+			@extend %clearfix;
+			span {
+				display:inline-block;
+				width:100%;
+				float:left;
+				&:first-child {
+					font-size:140%;
+					color:#fff;
+					@extend .primary_bg;
+					@include border-radius(20px 20px 0 0);
+				}
+				&:nth-child(2) {
+					font-size:357%;
+					line-height:1em;
+					border-width:0 1px 1px 1px;
+					padding:10px 5px;
+					@include border-radius(0 0 20px 20px);
+				}
+			}
+		}
+		.rb_row_right {
+			padding-left:25px;
+		}
+		.rb_title {
+			h3 {
+				margin:0;
+			}
+		}
+	}
+}
+.rb_title {
+	a {
+		@extend .heading_h1_color;
+		&:hover {
+			@extend .link;
+		}
+	}
+}
+
+/* ------------------------------- SOCIAL */
+.widget_wd_follow {
+	@extend %clearlist;
+	ul {
+		@extend %clearfix;
+		li {
+			float:left;
+			a {
+				display:inline-block;
+				width:45px;
+				height:45px;
+				text-align:center;
+				&:before {
+					line-height:45px;
+					font-size:15px;
+				}
+				&:hover {
+					background-color:#000;
+					color:#fff;
+				}
+			}
+		}
+	}
+}

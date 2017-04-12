@@ -1,0 +1,126 @@
+/* =======================================================
+   = BUTTONS */
+ 
+/* GENERAL */ 
+button,.button,
+input.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.vc_btn3,
+.clear-all {
+	@include button_style(true,false,false);
+}
+
+.woocommerce,.woocommerce-page {
+	#respond input#submit,a.button,button.button,input.button[type^="submit"],a.button.alt {
+		@include button_style(true,false,false);
+		&:disabled,&:disabled[disabled] {
+			@include button_style(true,false,false);
+		}
+	}
+}
+
+/* HEADER */
+.site-header {
+	button,.button,
+	input.button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.vc_btn3,
+	.clear-all {
+		@include button_style(false,false,false,false,true);
+		&:disabled,&:disabled[disabled] {
+			@include button_style(false,false,false,false,true);
+		}
+	}
+	.woocommerce {
+		#respond input#submit,a.button,button.button,input.button {
+			&:disabled,&:disabled[disabled] {
+				@include button_style(false,false,false,true);
+			}
+		}
+	}
+}
+.woocommerce, .woocommerce-page {
+	.site-header {
+		button,.button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"],
+		.vc_btn3,
+		.clear-all {
+			@include button_style(false,false,false,false,true);
+		}
+	}
+}
+   
+/* SIDEBAR */
+.sidebar {
+	button,.button,
+	input.button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.vc_btn3,
+	.clear-all {
+		@include button_style(false,true,false);
+		&:disabled,&:disabled[disabled] {
+			@include button_style(false,true,false);
+		}
+	}
+	.woocommerce {
+		#respond input#submit,a.button,button.button,input.button {
+			&:disabled,&:disabled[disabled] {
+				@include button_style(false,true,false);
+			}
+		}
+	}
+}   
+.woocommerce {
+	.sidebar {
+		button,.button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"],
+		.vc_btn3,
+		.clear-all {
+			@include button_style(false,true,false);
+		}
+	}
+}
+
+/* FOOTER */
+/* SIDEBAR */
+.site-footer {
+	button,.button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.vc_btn3,
+	.clear-all {
+		@include button_style(false,false,true);
+	}
+	.woocommerce {
+		#respond input#submit,a.button,button.button,input.button {
+			@include button_style(false,false,true);
+		}
+	}
+}   
+.woocommerce {
+	.site-footer {
+		button,.button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"],
+		.vc_btn3,
+		.clear-all {
+			@include button_style(false,false,true);
+		}
+	}
+}
+
+
+  
+

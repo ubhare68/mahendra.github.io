@@ -1,0 +1,208 @@
+/* ============================================== 
+   = WORDPRESS WIDGET */
+   
+.widget_recent_entries,.widget_recent_comments,.widget_archive,.widget_categories,.widget_meta,.widget_nav_menu,.widget_pages,.widget_rss {
+	@extend %liststyle;
+	ul {
+		li {
+			&:before {
+				@extend .sidebar_text_bg;
+			}
+		}
+	}
+}
+.sidebar {
+	.widget_recent_entries,.widget_recent_comments,.widget_archive,.widget_categories,.widget_meta,.widget_nav_menu,.widget_pages,.widget_rss {
+		a {
+			color:inherit;
+			&:hover {
+				@extend .sidebar_link;
+			}
+		}
+	}
+}
+.site-footer {
+	.widget_recent_entries,.widget_recent_comments,.widget_archive,.widget_categories,.widget_meta,.widget_nav_menu,.widget_pages,.widget_rss  {
+		@extend %clearlist;
+	}
+}
+
+.widget_recent_comments {
+	ul {
+		li {
+			padding-top:10px;
+			padding-bottom:10px;
+			&:first-child {
+				padding-top:0;
+			}
+		}
+	}
+	.comment-author-link {
+		text-transform:capitalize;
+	}
+}
+
+.widget_rss {
+	li {
+		padding-bottom:10px!important;
+	}
+}
+
+.widget_archive {
+	li {
+		padding:10px 0!important;
+		a {
+			width:auto!important;
+			padding:0!important;
+		}
+		span {
+			float:right;
+		}
+		
+	}
+}
+
+.widget_categories{
+	ul {
+		li {
+			a {
+				width:auto!important;
+			}
+		}
+	}
+}
+
+.widget_nav_menu {
+	a {
+		padding-right:20px!important;
+		&:hover {
+			text-decoration:none;
+		}
+	}
+	i {
+		&.fa {
+			display:inline-block;
+			@include pos(absolute,0,0,auto,auto);
+			line-height:20px;
+			padding-bottom:10px;
+			cursor:pointer;
+			min-width:20px;
+			text-align:center;
+		}
+	}
+	.sub-menu {
+		a {
+			padding-top:10px!important;
+		}
+		.sub-menu {
+			margin-top:-10px!important;
+		}
+	}
+}
+
+.widget_pages {
+	ul {
+		li {
+			ul {
+				&.children {
+					margin-top:-10px!important;
+					a {
+						padding-top:10px!important;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* WIDGET SEARCH */
+.widget_search {
+	@include search(false,false,true);
+}
+.sidebar {
+	.widget_search {
+		button {
+			@include border-radius(0);
+		}
+	}
+}
+
+/* WIDGET CALENDAR */
+#today {
+	color:#fff;
+	@extend .primary_bg;
+}
+.widget_calendar {
+	table {
+		caption {
+			margin:0 0 10px;
+		}
+		tr {
+			th,td{
+				padding:3px;
+				text-align:center;
+			}
+		}
+	}
+}
+.sidebar {
+	.widget_calendar {
+		th {
+			@extend .sidebar_heading;
+		}
+	}
+}
+.site-footer {
+	.widget_calendar {
+		th {
+			@extend .sidebar_heading;
+		}
+	}
+}
+
+/* WIDGET TAG CLOUD */
+.widget_tag_cloud {
+	@extend %tagcloud;
+}
+.sidebar {
+	.widget_tag_cloud {
+		a {
+			color:inherit;
+			&:hover {
+				@extend .sidebar_link;
+			}
+		}
+	}
+}
+.footer-content-top {
+	.widget_tag_cloud {
+		a {
+			color:inherit;
+			&:hover {
+				@extend .footer_top_link;
+			}
+		}
+	}
+}
+.footer-content-main {
+	.widget_tag_cloud {
+		a {
+			color:inherit;
+			&:hover {
+				@extend .footer_main_link;
+			}
+		}
+	}
+}
+.footer-content-bottom {
+	.widget_tag_cloud {
+		a {
+			color:inherit;
+			&:hover {
+				@extend .footer_bottom_link;
+			}
+		}
+	}
+}
+

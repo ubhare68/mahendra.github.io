@@ -1,0 +1,30 @@
+/* ============================================== 
+   = BACK TO TOP */
+   
+#to-top {
+	z-index:1000;
+	width:100px;
+	height:50px;
+	text-align:right;
+	@include pos(fixed,auto,18px,18px,auto);
+	a {
+		display:inline-block;
+		width:50px;
+		height:50px;
+		position:relative;
+		border-width:1px;
+		background:#fff;
+		&:after {
+			display:inline-block;
+			content:"\f102";
+			font-family:"FontAwesome";
+			text-align:center;
+			line-height:50px;
+			font-size:25px;
+			@include pos(absolute,0,0,0,0);
+		}
+		&:hover {
+			@include box-shadow($shadow);
+		}
+	}
+}

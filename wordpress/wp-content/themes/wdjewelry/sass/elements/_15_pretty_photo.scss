@@ -1,0 +1,19 @@
+/* PRETTY PHOTOS */
+.pp_description {
+	background:rgba(0,0,0,0.1);
+	color:#000;
+	text-transform:uppercase;
+	padding:5px 15px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.pp_overlay {
+	max-width:100%;
+}
+
+div.pp_woocommerce .pp_close,div.pp_woocommerce .pp_close:hover {
+	background:none;
+	border:0;
+	@include box-shadow(none);
+}

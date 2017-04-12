@@ -1,0 +1,45 @@
+/* ============================================== 
+   = TS COMPOSER SC */
+   
+/* -------------- SC Box */
+.ts-vcsc-box-icon{
+	&.icon_top-style {
+		overflow:hidden;
+		position:relative;
+		&:before {
+			content:"";
+			@include pos(absolute,0,0,0,0);
+			@include transition();
+			@extend .secondary_bg;
+			opacity:0;
+		}
+		.box-detail-wrapper {
+			@include pos(absolute,auto,0,0,0);
+			padding:15px;
+		}
+		.ts-icon-box-inner {
+			.ts-box-icon-link {
+				display:inline-block;
+				max-width:100%;
+				img {
+					max-width:100%;
+					height:auto!important;
+				}
+			}
+		}
+		.ts-icon-box-content {
+			margin-top:7px!important;
+		}
+		&:hover {
+			&:before {
+				opacity:1;
+			}
+			img {
+				background:none!important;
+			}
+			.ts-css-shadow{
+				background:none!important;
+			}
+		}
+	}
+}

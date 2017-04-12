@@ -1,0 +1,41 @@
+
+/* ============================================== 
+   = TABLE */
+   
+table {
+	width:100%;
+    max-width: 100%;
+    table-layout:fixed;
+    border-width:1px;
+    background: transparent;
+	tbody, tfoot, thead {
+		max-width: 100%;
+	}
+	thead {
+		tr {
+			th {
+				padding: 14px 20px;
+				text-transform: none;
+			}
+		}
+	}
+	tfoot {
+		tr {
+			th {
+				background: transparent;
+			}
+		}
+	}
+	tr {
+		td,th {
+			border-width: 1px 0 0 1px;
+		}
+		th {
+			font-weight:normal;
+			padding:28px 20px;
+		}
+		td {
+			padding: 28px 20px
+		}
+	}
+}

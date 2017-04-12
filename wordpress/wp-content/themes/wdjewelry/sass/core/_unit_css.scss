@@ -1,0 +1,440 @@
+/* UNIT CSS */
+
+.sticky-post {}
+figure {
+	max-width:100%;
+}
+
+/* ==============================================
+   = MENU */
+.nav-menu {
+	position:relative;
+	z-index:10;
+	ul {
+		@extend %clearlist;
+		position:relative;
+		z-index:2;
+		ul {
+			li {
+				display:inline-block;
+			}
+			a {
+				display:inline-block;
+				font-size:12px;
+				color:rgb(80, 80, 80);
+				padding:5px 15px;
+				line-height:16px;
+			}
+		}
+	}
+	> ul {
+		@extend %clearfix;
+		> li {
+			display:inline-block;
+			float:left;
+			@include dropdown($width:200px, $left:true, $center:false, $right:false);
+			> a {
+				display:inline-block;
+				padding:24px 17px;
+				font-size:14px;
+			}
+			&.page_item_has_children {
+				> a {
+					padding-right:25px;
+					position:relative;
+					&:after {
+						@include font-awesome("\f0d7",14px,14px);
+						@include pos(absolute,50%,10px,auto,auto);
+						margin-top:-6px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ==============================================
+   = IMAGE ALIGN */
+
+.alignleft, .alignright, .aligncenter, .alignnone {
+  max-width: 100%;
+  height: auto;
+}
+
+.alignleft img, .alignright img, .aligncenter img, .alignnone img {
+  max-width: 100%;
+}
+
+.alignleft {
+  float: left !important;
+  margin: 0 20px 10px 0 !important;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 20px 10px !important;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto 20px;
+}
+   
+/* ==============================================
+   = GALERRY */
+   
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin: 0;
+}
+
+.gallery-item img {
+  margin: 0 auto;
+  display: block;
+}
+
+.gallery-item .gallery-icon {
+  line-height: 0;
+}
+
+.gallery-item .gallery-icon a {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.gallery-item .gallery-icon a:before {
+  opacity: 0;
+  z-index: 2;
+  content: "+";
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-family: "FontAwesome";
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  top: 50%;
+  margin-top: -15px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.gallery-item .gallery-icon a:after {
+  opacity: 0;
+  z-index: 1;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.gallery-item:hover .gallery-icon a:before {
+  opacity: 1;
+}
+
+.gallery-item:hover .gallery-icon a:after {
+  opacity: 1;
+}
+
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+}
+
+.gallery-item .gallery-caption {
+  z-index: 2;
+  overflow: hidden;
+  display: inline-block;
+  opacity: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  left: 2px;
+  right: 2px;
+  margin: 0;
+  padding: 10px 0;
+  text-indent: 10px;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.gallery-item .gallery-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0;
+}
+
+.gallery-item .gallery-caption .wp-caption-text {
+  opacity: 60%;
+  font-size: 13px;
+  padding: 20px 0;
+}
+
+.gallery-columns-1 {
+  overflow: hidden;
+  margin: 0 -2px 20px;
+}
+
+.gallery-columns-1 .gallery-item {
+  width: 100%;
+  padding: 2px;
+}
+
+.gallery-columns-2 {
+  overflow: hidden;
+  margin: 0 -2px 20px;
+}
+
+.gallery-columns-2 .gallery-item {
+  width: 50%;
+  padding: 2px;
+}
+
+.gallery-columns-3 {
+  overflow: hidden;
+  margin: 0 -2px 20px;
+}
+
+.gallery-columns-3 .gallery-item {
+  width: 33.3%;
+  padding: 2px;
+}
+
+.gallery-columns-4 {
+  overflow: hidden;
+  margin: 0 -2px 20px;
+}
+
+.gallery-columns-4 .gallery-item {
+  width: 25%;
+  padding: 2px;
+}
+
+.gallery-columns-5 {
+  overflow: hidden;
+  margin: 0 -2px 20px;
+}
+
+.gallery-columns-5 .gallery-item {
+  width: 20%;
+  padding: 2px;
+}
+
+.gallery-columns-6 {
+  overflow: hidden;
+  margin: 0 -2px 20px;
+}
+
+.gallery-columns-6 .gallery-item {
+  width: 16.66%;
+  padding: 2px;
+}
+
+.gallery-columns-7 {
+  overflow: hidden;
+  margin: 0 -2px 20px;
+}
+
+.gallery-columns-7 .gallery-item {
+  width: 14.28%;
+  padding: 2px;
+}
+
+.gallery-columns-8 {
+  overflow: hidden;
+  margin: 0 -2px 20px;
+}
+
+.gallery-columns-8 .gallery-item {
+  width: 12.5%;
+  padding: 2px;
+}
+
+.gallery-columns-9 {
+  overflow: hidden;
+  margin: 0 -2px 20px;
+}
+
+.gallery-columns-9 .gallery-item {
+  width: 11.1%;
+  padding: 2px;
+}
+
+@media only screen and (max-width-device-width: 767px) and (min-width-device-width: 481px), only screen and (max-width: 767px) and (min-width: 481px) {
+  .gallery-columns-1 .gallery-item,
+  .gallery-columns-2 .gallery-item,
+  .gallery-columns-3 .gallery-item,
+  .gallery-columns-4 .gallery-item,
+  .gallery-columns-5 .gallery-item,
+  .gallery-columns-6 .gallery-item,
+  .gallery-columns-7 .gallery-item,
+  .gallery-columns-8 .gallery-item,
+  .gallery-columns-9 .gallery-item {
+    width: 50%;
+  }
+  .gallery-columns-1 br,
+  .gallery-columns-2 br,
+  .gallery-columns-3 br,
+  .gallery-columns-4 br,
+  .gallery-columns-5 br,
+  .gallery-columns-6 br,
+  .gallery-columns-7 br,
+  .gallery-columns-8 br,
+  .gallery-columns-9 br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width-device-width: 480px), only screen and (max-width: 480px) {
+  .gallery-columns-1 .gallery-item,
+  .gallery-columns-2 .gallery-item,
+  .gallery-columns-3 .gallery-item,
+  .gallery-columns-4 .gallery-item,
+  .gallery-columns-5 .gallery-item,
+  .gallery-columns-6 .gallery-item,
+  .gallery-columns-7 .gallery-item,
+  .gallery-columns-8 .gallery-item,
+  .gallery-columns-9 .gallery-item {
+    width: 100%;
+  }
+}
+
+/* ==============================================
+   = HOME BLOG */
+   
+.home {
+	&.blog {
+		.wd_content {
+			> div {
+				@extend %content_blog_bg;
+				@extend %content_blog;
+				@include content_blog_type(false,true);
+				.wd_content_tag,.wd_content_category {
+					a {
+						display:inline-block;
+						text-transform:capitalize;
+						@extend .text;
+						margin-left:2px;
+						opacity:0.6;
+						&:hover {
+							opacity:1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ==============================================
+   = WIDGET */
+
+#today a {
+	color:#fff!important;
+}
+
+/* =========================================================
+   = PAGE LINKS */
+ 
+.page-links{
+	@extend %clearfix;
+	.page-links-title {
+		display:none;
+	}
+	> a, > span {
+		display:inline-block;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		margin:0 5px 5px 0;
+		padding:0 15px;
+		border-width:1px;
+		float:left;
+		> span {
+			
+		}
+	}
+	> a {
+		@extend .text;
+	}
+	> span, > a:hover {
+		@extend .primary_bg;
+		@extend .primary_bg_border;
+		color:#fff;
+	}
+	>.screen-reader-text {
+		display:none;
+	}
+}
+
+#comments {
+	> .commentlist {
+		padding-left:0;
+		.comment-left {
+			@extend %clearfix;
+		}
+	}
+}
+
+/* =========================================================
+   = PAGE LINKS */
+   
+/* Readmore for post no title */
+
+
+/* Search Page */
+.wd_content_tag,.wd_content_category {
+	font-size:14px;
+	a {
+		@extend .text;
+		text-transform:lowercase;
+		opacity:0.6;
+		display:inline-block;
+		margin:0 0 0 2px;
+		&:hover {
+			text-decoration:none;
+			opacity:1;
+		}
+	}
+}
+.seach_content {
+	.read-more {
+		margin:20px 0;
+	}
+}

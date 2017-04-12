@@ -1,0 +1,147 @@
+.tabs9 {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border: 1px solid #eaeaea;
+	border-bottom: none;
+	height: 54px;
+	width: 99%;
+	background-color: #fff;
+	position: relative;
+	z-index: 4;
+}
+.tabs9 li {
+	margin: 0;
+	text-align: left;
+}
+.tabs9 li a {
+	float: left;
+	color: #454545;
+	height: 50px;
+	padding: 0px 15px;
+	font-weight: 600;
+	text-decoration: none;
+	line-height: 50px;
+	font-size: 14px;
+	background-color: #fff;
+	border-right: 1px solid #e0e0e0;
+	border-top: 4px solid #fff;
+}
+.tabs9 li a:hover {
+	color: #fdce16;
+}
+.tabs9 li.active a {
+	color: #fdce16;
+	border-bottom: 1px solid #fff;
+}
+
+
+.tabs9.two li.active a {
+	color: #73b41f;
+	border-top: 4px solid #eaeaea;
+	border-bottom: 1px solid #fff;
+}
+.tabs9.two li a:hover {
+	color: #73b41f;
+}
+
+.tabs-content9 {
+	float: left;
+	width: 99%;
+	padding:30px;
+	text-align: left;
+	margin-bottom: 40px;
+	border: 1px solid #eaeaea;
+	position: relative;
+	z-index: 3;
+}
+.tabs-content9 img.img_left2 {
+	width: auto;
+	margin-right: 25px;
+	margin-bottom: 20px;
+}
+.tabs-content9 .tabs-panel {
+	padding: 20px;
+}
+.tabs-content9 .tabs-panel9 .tab-title9 {
+	display: none;
+}
+
+.tabs9.two li a {
+	padding: 0px 20px;
+}
+
+
+/*	#Themes
+//	================================================== */
+
+#example-9 .tabs9 li {
+width: 100px;
+border: 1px solid #DDD;
+border-right: 0;
+background: #EEE;
+cursor: pointer;
+position: relative;
+z-index: 999;
+}
+#example-9 .tabs9 li:last-child {
+border-right: 1px solid #DDD;
+}
+#example-9 .tabs9 li.active {
+border-bottom: 1px solid #FFF;
+background: #FFF;
+}
+#example-9 .tabs-content9 {
+border: 1px solid #DDD;
+background: #FFF;
+position: relative;
+top: -1px;
+z-index: 99;
+}
+#example-9 .tabs-content9 .tab-title {
+color: #0b8593;
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1169px){
+
+.tabs9 li a {
+	padding: 0px 20px;
+}
+
+.tabs9.two li a {
+    padding: 0 11px;
+}
+
+.tabs9 li a {
+    font-size: 13px;
+}
+
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px){
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+.tabs9 li a {
+	padding: 0px 10px;
+}
+
+}
+
+
+@media only screen and (max-width: 479px){
+
+
+
+
+	
+}
+

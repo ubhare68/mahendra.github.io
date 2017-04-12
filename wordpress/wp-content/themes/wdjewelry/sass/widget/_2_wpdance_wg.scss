@@ -1,0 +1,83 @@
+/* ============================================== 
+   = WPDANCE WIDGET */
+ 
+/* SUPSCRIPTIONS WIDGET */
+.widget_subscriptions {
+	.subscribe_widget {
+		width:100%;
+		max-width:570px;
+	}
+	.newsletter {
+		margin:0 0 15px;
+	}
+	form {
+		@include pos(relative,auto,auto,auto,auto);
+		.button {
+			padding:7px 12px!important;
+			border-radius:0!important;
+			-moz-border-radius:0!important;
+			-webkit-border-radius:0!important;
+			@include pos(absolute,0,0,auto,auto);
+		}
+	}
+}
+
+/* NAV COLOR */
+.widget_wd_pc_color_nav {
+	@extend %clearlist;
+	ul {
+		@extend %clearfix;
+	}
+	li {
+		float:left;
+		margin: 0 20px 5px 0;
+		a {
+			display:inline-block;
+			position:relative;
+			@extend .sidebar_text;
+			span {
+				display:inline-block;
+				padding:0 5px;
+				min-width:30px;
+				line-height:30px;
+				border-width:1px;
+				text-align:center;
+				@extend .sidebar_btn;
+				@include transition;
+			}
+			div {
+				width:30px!important;
+				height:30px!important;
+				~ span {
+					text-align:left;
+					line-height:inherit;
+					border:0;
+					@include centerer(absolute,true,false);
+					top:0;
+					opacity:0;
+					padding:0 10px;
+					background:#000;
+					color:#fff;
+					&:after {
+						color:#000;
+						margin-top:-5px;
+						margin-left:-5px;
+						@include font-awesome("\f0d7",14px,14px);
+						@include pos(absolute,100%,0,auto,50%);
+					}
+				}
+			}
+			&:hover {
+				div {
+					~ span {
+						top:-40px;
+						opacity:1;
+						background:#000;
+						color:#fff;
+					}
+				}
+			}
+		}
+	}
+}
+.widget_wd_pc_color_nav ~ .widget_wd_pc_color_nav {margin-top:-30px;}

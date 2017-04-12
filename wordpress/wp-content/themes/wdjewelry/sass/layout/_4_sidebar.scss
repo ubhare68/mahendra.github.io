@@ -1,0 +1,26 @@
+/* ============================================== 
+   = SIDEBAR */
+   
+.sidebar {
+	@include text_style(false,false,true,false,false,false);
+	@include background_style(false,false,false,true,false,false,false,false,false,false);
+	* {
+		@include border_style(false,false,true,false,false,false);
+	}
+	a {
+		@include link_style(false,false,true,false,false,false);
+	}
+	h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+		@include title_style(false,false,true,false,false,false,false);
+		a {
+			font-size:100%!important;
+		}
+	}
+	.widget-title,.widgettitle,.widget-title a,.widgettitle a {
+		@include title_style(false,false,true,false,false);
+	}
+	.widget {
+		margin:0 0 40px;
+	}
+}
+   

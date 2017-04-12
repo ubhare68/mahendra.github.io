@@ -1,0 +1,164 @@
+/* ============================================== 
+   = BLOG PAGE */
+
+
+
+/* BLOGS */   
+.content_blog {
+	@extend %content_blog;
+	.content_blogs {
+		&.masonry {
+			@include content_blog_style(false,true);
+		}
+		&.regular_image {
+			@include content_blog_style(true,false);
+		}
+	}
+	.large_image {
+		> div {
+			@include content_blog_type(true,false);
+		}
+	}
+	.small_image {
+		> div {
+			@include content_blog_type(false,true);
+		}
+	}
+}   
+
+.wd_load_post {
+	@extend %content_blog_loadmore;
+}  
+
+.navigation {
+	@include navigation(true);
+}
+
+.content_author {
+	a {
+		@extend .text;
+		&:hover {
+			@extend .link;
+		}
+	}
+	> span {
+		&:last-child {
+			opacity:0.6;
+			display:inline-block;
+		}
+	}
+}
+
+.content__read-more {
+	margin:20px 0;
+	p {
+		margin:0;
+	}
+}
+ 
+/* SINGLE BLOG */ 
+.single-post {
+	.wd_content_single {
+		> article {
+			padding:20px;
+			@extend .pro_bg;
+		}
+		img.wp-post-image {
+			width:100%;
+			height:auto;
+		}
+		.wd_single_title {
+			@extend %blog_detail_title;
+		}
+		.content {
+			@extend .pro_bg;
+			padding:20px 30px;
+		}
+		.wd_single_home {
+			@extend %content_blog_link_home;
+		}
+		.content_author {
+			@extend %content_blog_author;
+		}
+		.entry-content {
+			margin:0 0 30px;
+		}
+		.wd_single_tag {
+			@extend %content_blog_tag;
+		}
+		.social_icon {
+			@extend %content_blog_social;
+		}
+		.comment-blog {
+			@extend %content_comment;
+		}
+	}
+	.related_post {
+		margin:50px -15px 30px;
+		@extend %blog_detail_related;
+	}
+	.comment {
+		@extend %blog_detail_related;
+	}
+}
+
+#comments {
+	ol {
+		li {
+			display:block;
+			padding:20px 0 0!important;
+			margin:20px 0 0;
+			border-width:1px 0 0;
+			.comment-left {
+				@extend %clearlist;
+				> span {
+					float:right;
+				}
+			}
+			.fn {
+				text-transform:uppercase;
+				margin:0 20px 0 0;
+			}
+			.date_comment { 
+				a {
+					@extend .text;
+					opacity:0.6;
+					&:hover {
+						opacity:1;
+					}
+				}
+			}
+			.comment-meta {
+				margin:0 0 5px;
+			}
+			.comment-reply-link {
+				padding:0 0 0 20px;
+				position:relative;
+				@extend .text;
+				&:hover {
+					@extend .link;
+				}
+				&:before {
+					@include font-awesome("\f112",14px,inherit);
+					@include pos(absolute,-2px,auto,auto,0);
+				}
+			}
+		}
+		ul {
+			padding-left:40px!important;
+		}
+	}
+	> ol {
+		> li {
+			&:first-child {
+				padding-top:0!important;
+				margin-top:0;
+				border:0;
+			}
+		}
+	}
+}
+
+#review_form, #respond {
+	padding:50px 0 0;
+}

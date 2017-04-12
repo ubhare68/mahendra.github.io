@@ -1,0 +1,78 @@
+
+/* ============================================== 
+   = SELECT - INPUTS - TEXTAREA */
+   
+select {
+	text-transform: none;
+	padding:5px 10px;
+	max-width: 100%;
+	border-width:1px;
+	background:#fff;
+	cursor: pointer;
+	@include transition;
+	&:hover,
+	&:focus {
+		outline:none;
+		@include box-shadow($shadow);
+	}
+}
+
+input {
+	max-width: 100%;
+	@include transition;
+	&:hover,
+	&:focus {
+		outline:none;
+		@include box-shadow($shadow);
+	}
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+	&:-webkit-autofill {
+		background:none!important;
+	}
+	&[type="checkbox"],
+	&[type="radio"]{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	&[type="number"] {
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button{
+			height: auto;
+		}
+	}
+	&[type="search"] {
+		-webkit-appearance: textfield;
+		&::-webkit-search-cancel-button {
+			-webkit-appearance: none;
+		}
+		&::-webkit-search-decoration {
+			-webkit-appearance: none;
+		}	
+	}
+	&[type="text"],&[type="email"],&[type="url"],&[type="password"],&[type="search"],&[type="tel"],&[type="number"],&[type="search"],textarea{
+		border-width:1px;
+		padding:7px 20px;
+		width:100%;
+		max-width:700px;
+		font-weight:normal;
+		font-size:13px;
+		color:#7d7d7d;
+	}
+}
+
+textarea {
+	padding:10px 15px;
+	width:100%;
+	max-width:700px;
+	min-height:150px;
+	border-width:1px;
+	@include transition;
+	&:hover,&:focus {
+		outline:none;
+		@include box-shadow($shadow);
+	}
+}

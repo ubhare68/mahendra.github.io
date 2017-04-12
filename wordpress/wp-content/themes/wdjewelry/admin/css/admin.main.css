@@ -1,0 +1,12 @@
+.wd_config_field label {
+	margin-left: 10px;
+    width: 250px;
+    float: left;
+    margin-bottom: 10px;
+}
+.wd_config_field{
+	margin-bottom: 10px;
+}
+..wd_config_field select {
+	width: 150px !important;
+}

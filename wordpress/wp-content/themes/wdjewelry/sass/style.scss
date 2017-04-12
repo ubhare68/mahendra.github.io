@@ -1,0 +1,69 @@
+/*
+Theme Name: wdjewelry
+Theme URI: /wdjewelry/
+Author:  Wpdance team
+Author URI: http://wpdance.com/
+Description: our default theme lets you create a strongest website with many features.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: wdjewelry
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+// Core variables and mixins
+@import "core/custom";
+@import "core/mixins";
+@import "core/unit_css";
+
+// Reset and elements
+@import "elements/00_normalize";
+@import "elements/01_buttons";
+@import "elements/02_inputs";
+@import "elements/03_forms";
+@import "elements/04_tables";
+@import "elements/05_breadcrumbs";
+@import "elements/06_carousel";
+@import "elements/07_owl_slider";
+@import "elements/08_pager";
+@import "elements/09_close";
+@import "elements/10_responsive_utilities";
+@import "elements/11_revolution";
+@import "elements/12_extra_class";
+@import "elements/13_back_to_top";
+@import "elements/14_loading";
+@import "elements/15_pretty_photo";
+
+// Layout 
+@import "layout/0_layout.scss";
+@import "layout/1_header.scss";
+@import "layout/2_content.scss";
+@import "layout/3_footer.scss";
+@import "layout/4_sidebar.scss";
+@import "layout/5_shop.scss";
+@import "layout/6_blog.scss";
+@import "layout/7_page.scss";
+
+// Shortcode
+@import "shortcode/0_wordpress_sc.scss";
+@import "shortcode/1_visual_composer_sc.scss";
+@import "shortcode/2_ts_composer_sc.scss";
+@import "shortcode/3_woo_sc.scss";
+@import "shortcode/4_wpdance_sc.scss";
+
+// Widget 
+@import "widget/0_wordpress_wg.scss";
+@import "widget/_1_woo_wg.scss";
+@import "widget/_2_wpdance_wg.scss";
+
+// Page 
+@import "page/_404.scss";
+@import "page/_contact.scss";
+@import "page/_search.scss";
+
+@media screen and (max-width: 600px) {
+	html body {position:static;}
+}

@@ -1,0 +1,1780 @@
+/*
+ * jQuery FlexSlider v2.2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+
+/* Browser Resets
+*********************************/
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* Icon Fonts
+*********************************/
+/* Font-face Icons */
+@font-face {
+	font-family: 'flexslider-icon';
+	src:url('fonts/flexslider-icon.eot');
+	src:url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/flexslider-icon.woff') format('woff'),
+		url('fonts/flexslider-icon.ttf') format('truetype'),
+		url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+/*.flexslider .slides img {width: 100%; display: block;}*/
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "\0020"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider { margin: 0 0 60px; position: relative; -o-border-radius: 4px; zoom: 1; }
+.flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+.loading .flex-viewport { max-height: 300px; }
+.flexslider .slides { zoom: 1; }
+.carousel li { margin-right: 5px; }
+
+.carousel.two li { margin-right: 0px; }
+
+
+/*home portfolio styles*/
+
+
+
+/* Direction Nav */
+/*.flex-direction-nav {*height: 0;}
+.flex-direction-nav a  { text-decoration:none; display: block; width: 40px; height: 40px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+.flex-direction-nav .flex-prev { left: -50px; }
+.flex-direction-nav .flex-next { right: -50px; text-align: right; }
+.flexslider:hover .flex-prev { opacity: 0.7; left: 10px; }
+.flexslider:hover .flex-next { opacity: 0.7; right: 10px; }
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
+.flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+.flex-direction-nav a:before  { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f001'; }
+.flex-direction-nav a.flex-next:before  { content: '\f002'; }*/
+
+/* Direction Nav */
+/*.flex-direction-nav {*height: 0;}
+
+.flex-direction-nav a  { text-decoration:none; display: block; width: 40px; height: 40px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }*/
+
+
+
+/* Direction Nav style 1 */
+.flex-direction-nav.one {*height: 0;}
+
+.flex-direction-nav.one a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: -80px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.one .flex-prev.one { 
+left:478px; background:url(pre-arrow-style1.jpg) 0 0 no-repeat;
+}
+.flex-direction-nav.one .flex-prev:hover.one { 
+left:478px; background:url(pre-arrow-style1-hover.jpg) 0 0 no-repeat;
+}
+
+.flex-direction-nav.one .flex-next.one { right:0px; text-align: right; background:url(next-arrow-style1.jpg) 0 0 no-repeat; }
+.flex-direction-nav.one .flex-next:hover.one { right:0px; text-align: right; background:url(next-arrow-style1-hover.jpg) 0 0 no-repeat; }
+
+
+
+/* Direction Nav style 2 */
+.flex-direction-nav.two {*height: 0;}
+
+.flex-direction-nav.two a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: 180px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.two .flex-prev.two { 
+left:-95px; background:url(pre-arrow-style2.png) 0 0 no-repeat;
+}
+.flex-direction-nav.two .flex-prev:hover.two { 
+left:-95px; background:url(pre-arrow-style2-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.two .flex-next.two { right:-95px; text-align: right; background:url(next-arrow-style2.png) 0 0 no-repeat; }
+.flex-direction-nav.two .flex-next:hover.two { right:-95px; text-align: right; background:url(next-arrow-style2-hover.png) 0 0 no-repeat; }
+
+
+
+/* Direction Nav style 3 */
+.flex-direction-nav.three {*height: 0;}
+
+.flex-direction-nav.three a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: 140px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.three .flex-prev.three { 
+left:-95px; background:url(pre-arrow-style3.png) 0 0 no-repeat;
+}
+.flex-direction-nav.three .flex-prev:hover.three { 
+left:-95px; background:url(pre-arrow-style3-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.three .flex-next.three { right:-95px; text-align: right; background:url(next-arrow-style3.png) 0 0 no-repeat; }
+.flex-direction-nav.three .flex-next:hover.three { right:-95px; text-align: right; background:url(next-arrow-style3-hover.png) 0 0 no-repeat; }
+
+
+/* Direction Nav style 4 */
+.flex-direction-nav.four {*height: 0;}
+
+.flex-direction-nav.four a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: 80px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.four .flex-prev.four { 
+left:-95px; background:url(pre-arrow-style2.png) 0 0 no-repeat;
+}
+.flex-direction-nav.four .flex-prev:hover.four { 
+left:-95px; background:url(pre-arrow-style2-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.four .flex-next.four { right:-95px; text-align: right; background:url(next-arrow-style2.png) 0 0 no-repeat; }
+.flex-direction-nav.four .flex-next:hover.four { right:-95px; text-align: right; background:url(next-arrow-style2-hover.png) 0 0 no-repeat; }
+
+
+
+/* Direction Nav style 5 */
+.flex-direction-nav.five {*height: 0;}
+
+.flex-direction-nav.five a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: -77px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.five .flex-prev.five { 
+left:706px; background:url(pre-arrow-style4.png) 0 0 no-repeat;
+}
+.flex-direction-nav.five .flex-prev:hover.five { 
+left:706px; background:url(pre-arrow-style4-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.five .flex-next.five { right:-14px; text-align: right; background:url(next-arrow-style4.png) 0 0 no-repeat; }
+.flex-direction-nav.five .flex-next:hover.five { right:-14px; text-align: right; background:url(next-arrow-style4-hover.png) 0 0 no-repeat; }
+
+
+
+
+/* Direction Nav style 6 */
+.flex-direction-nav.six {*height: 0;}
+
+.flex-direction-nav.six a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: 180px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.six .flex-prev.six { 
+left:-95px; background:url(pre-arrow-style2.png) 0 0 no-repeat;
+}
+.flex-direction-nav.six .flex-prev:hover.six { 
+left:-95px; background:url(pre-arrow-style2-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.six .flex-next.six { right:-95px; text-align: right; background:url(next-arrow-style2.png) 0 0 no-repeat; }
+.flex-direction-nav.six .flex-next:hover.six { right:-95px; text-align: right; background:url(next-arrow-style2-hover.png) 0 0 no-repeat; }
+
+
+
+
+
+/* Direction Nav style 7 */
+.flex-direction-nav.seven {*height: 0;}
+
+.flex-direction-nav.seven a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: 380px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.seven .flex-prev.seven { 
+left:750px; background:url(pre-arrow-style2.png) 0 0 no-repeat;
+}
+.flex-direction-nav.seven .flex-prev:hover.seven { 
+left:750px; background:url(pre-arrow-style2-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.seven .flex-next.seven { 
+right:740px; 
+text-align: right; 
+background:url(next-arrow-style2.png) 0 0 no-repeat;
+}
+ 
+.flex-direction-nav.seven .flex-next:hover.seven { 
+right:740px; text-align: right; 
+background:url(next-arrow-style2-hover.png) 0 0 no-repeat; 
+}
+
+
+
+
+/* Direction Nav style 8 */
+.flex-direction-nav.eight {*height: 0;}
+
+.flex-direction-nav.eight a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: -72px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.eight .flex-prev.eight { 
+left:300px; background:url(pre-arrow-style4.png) 0 0 no-repeat;
+}
+.flex-direction-nav.eight .flex-prev:hover.eight { 
+left:300px; background:url(pre-arrow-style4-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.eight .flex-next.eight { right:-14px; text-align: right; background:url(next-arrow-style4.png) 0 0 no-repeat; }
+.flex-direction-nav.eight .flex-next:hover.eight { right:-14px; text-align: right; background:url(next-arrow-style4-hover.png) 0 0 no-repeat; }
+
+
+/* Direction Nav style 9 */
+.flex-direction-nav.nine {*height: 0;}
+
+.flex-direction-nav.nine a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: 140px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.nine .flex-prev.nine { 
+left:-95px; background:url(pre-arrow-style3.png) 0 0 no-repeat;
+}
+.flex-direction-nav.nine .flex-prev:hover.nine { 
+left:-95px; background:url(pre-arrow-style3-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.nine .flex-next.nine { right:-95px; text-align: right; background:url(next-arrow-style3.png) 0 0 no-repeat; }
+.flex-direction-nav.nine .flex-next:hover.nine { right:-95px; text-align: right; background:url(next-arrow-style3-hover.png) 0 0 no-repeat; }
+
+
+
+
+/* Direction Nav style 10 */
+.flex-direction-nav.ten {*height: 0;}
+
+.flex-direction-nav.ten a  { width: 40px; height: 40px; position: absolute; top: -75px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer;;}
+
+.flex-direction-nav.ten .flex-prev.ten { 
+left:1112px; background:url(pre-arrow-style4.png) 0 0 no-repeat;
+}
+.flex-direction-nav.ten .flex-prev:hover.ten { 
+left:1112px; background:url(pre-arrow-style4-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.ten .flex-next.ten { right:-14px; text-align: right; background:url(next-arrow-style4.png) 0 0 no-repeat; }
+.flex-direction-nav.ten .flex-next:hover.ten { right:-14px; text-align: right; background:url(next-arrow-style4-hover.png) 0 0 no-repeat; }
+
+
+
+
+/* Direction Nav style 11 */
+.flex-direction-nav.eleven {*height: 0;}
+
+.flex-direction-nav.eleven a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: 140px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.eleven .flex-prev.eleven { 
+left:-95px; background:url(pre-arrow-style3.png) 0 0 no-repeat;
+}
+.flex-direction-nav.eleven .flex-prev:hover.eleven { 
+left:-95px; background:url(pre-arrow-style3-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.eleven .flex-next.eleven { right:-95px; text-align: right; background:url(next-arrow-style3.png) 0 0 no-repeat; }
+.flex-direction-nav.eleven .flex-next:hover.eleven { right:-95px; text-align: right; background:url(next-arrow-style3-hover.png) 0 0 no-repeat; }
+
+
+
+
+/* Direction Nav style 12 */
+.flex-direction-nav.twelve {*height: 0;}
+
+.flex-direction-nav.twelve a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: 200px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.twelve .flex-prev.twelve { 
+left:-95px; background:url(pre-arrow-style2.png) 0 0 no-repeat;
+}
+.flex-direction-nav.twelve .flex-prev:hover.twelve { 
+left:-95px; background:url(pre-arrow-style2-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.twelve .flex-next.twelve { right:-95px; text-align: right; background:url(next-arrow-style2.png) 0 0 no-repeat; }
+.flex-direction-nav.twelve .flex-next:hover.twelve { right:-95px; text-align: right; background:url(next-arrow-style2-hover.png) 0 0 no-repeat; }
+
+
+
+/* Direction Nav style 13 */
+.flex-direction-nav.thirteen {*height: 0;}
+
+.flex-direction-nav.thirteen a  { text-decoration:none; display: block; width: 40px; height: 40px; position: absolute; top: 180px; z-index: 10; overflow: hidden; opacity: 1; cursor: pointer; color:#fff;}
+
+.flex-direction-nav.thirteen .flex-prev.thirteen { 
+left:-95px; background:url(pre-arrow-style3.png) 0 0 no-repeat;
+}
+.flex-direction-nav.thirteen .flex-prev:hover.thirteen { 
+left:-95px; background:url(pre-arrow-style3-hover.png) 0 0 no-repeat;
+}
+
+.flex-direction-nav.thirteen .flex-next.thirteen { right:-95px; text-align: right; background:url(next-arrow-style3.png) 0 0 no-repeat; }
+.flex-direction-nav.thirteen .flex-next:hover.thirteen { right:-95px; text-align: right; background:url(next-arrow-style3-hover.png) 0 0 no-repeat; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pause/Play */
+.flex-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8; z-index: 10; overflow: hidden; cursor: pointer; color: #000; }
+.flex-pauseplay a:before  { font-family: "flexslider-icon"; font-size: 20px; display: inline-block; content: '\f004'; }
+.flex-pauseplay a:hover  { opacity: 1; }
+.flex-pauseplay a.flex-play:before { content: '\f003'; }
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
+  .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1169px){
+
+/* Direction Nav style 2 */
+.flex-direction-nav.two {*height: 0;}
+
+.flex-direction-nav.two a  { 
+top: 500px; 
+}
+
+.flex-direction-nav.two .flex-prev.two { 
+left: 450px;
+}
+.flex-direction-nav.two .flex-prev:hover.two { 
+left:450px;
+}
+
+.flex-direction-nav.two .flex-next.two { 
+right:440px; 
+}
+
+.flex-direction-nav.two .flex-next:hover.two { 
+right:440px;
+ }
+
+
+.section_holder5 .skill_img {
+    width: 90%;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Direction Nav style 3 */
+
+.flex-direction-nav.three a  { 
+top: 350px; 
+}
+
+.flex-direction-nav.three .flex-prev.three { 
+left: 450px;
+}
+.flex-direction-nav.three .flex-prev:hover.three { 
+left:450px;
+}
+
+.flex-direction-nav.three .flex-next.three { 
+right:440px; 
+}
+
+.flex-direction-nav.three .flex-next:hover.three { 
+right:440px;
+ }
+
+
+
+/* Direction Nav style 4 */
+
+.flex-direction-nav.four a  { 
+top:-30px; 
+}
+
+.flex-direction-nav.four .flex-prev.four { 
+left: 887px;
+}
+.flex-direction-nav.four .flex-prev:hover.four { 
+left:887px;
+}
+
+.flex-direction-nav.four .flex-next.four { 
+right:0px; 
+}
+
+.flex-direction-nav.four .flex-next:hover.four { 
+right:0px;
+ }
+
+.flex-direction-nav.four .flex-prev.four {
+    left: 887px;
+}
+
+
+
+/* Direction Nav style 5 */
+
+.flex-direction-nav.five a  { 
+top:-56px; 
+}
+
+.flex-direction-nav.five .flex-prev.five { 
+left: 565px;
+}
+.flex-direction-nav.five .flex-prev:hover.five { 
+left:565px;
+}
+
+.flex-direction-nav.five .flex-next.five { 
+right:-7px; 
+}
+
+.flex-direction-nav.five .flex-next:hover.five { 
+right:-7px;
+ }
+
+
+/* Direction Nav style 6 */
+
+.flex-direction-nav.six a  { 
+top:480px; 
+}
+
+.flex-direction-nav.six .flex-prev.six { 
+left: 440px;
+}
+.flex-direction-nav.six .flex-prev:hover.six { 
+left:440px;
+}
+
+.flex-direction-nav.six .flex-next.six { 
+right:428px; 
+}
+
+.flex-direction-nav.six .flex-next:hover.six { 
+right:428px;
+ }
+
+.flex-direction-nav.six .flex-prev.six {
+    left: 440px;
+}
+
+
+/* Direction Nav style 7 */
+
+.flex-direction-nav.seven a  { 
+top:400px; 
+}
+
+.flex-direction-nav.seven .flex-prev.seven { 
+left: 487px;
+}
+.flex-direction-nav.seven .flex-prev:hover.seven { 
+left:487px;
+}
+
+.flex-direction-nav.seven .flex-next.seven { 
+right:440px; 
+}
+
+.flex-direction-nav.seven .flex-next:hover.seven { 
+right:440px;
+ }
+
+
+/* Direction Nav style 8 */
+
+.flex-direction-nav.eight a  { 
+top:-60px; 
+}
+
+.flex-direction-nav.eight .flex-prev.eight { 
+left: 238px;
+}
+.flex-direction-nav.eight .flex-prev:hover.eight { 
+left:238px;
+}
+
+.flex-direction-nav.eight .flex-next.eight { 
+right:-13px; 
+}
+
+.flex-direction-nav.eight .flex-next:hover.eight { 
+right:-13px;
+ }
+
+
+
+/* Direction Nav style 9 */
+
+.flex-direction-nav.nine a  { 
+top: 150px; 
+}
+
+.flex-direction-nav.nine .flex-prev.nine { 
+left: 51px;
+}
+.flex-direction-nav.nine .flex-prev:hover.nine { 
+left:51px;
+}
+
+.flex-direction-nav.nine .flex-next.nine { 
+right:52px; 
+}
+
+.flex-direction-nav.nine .flex-next:hover.nine { 
+right:52px;
+ }
+
+
+/* Direction Nav style 10 */
+
+.flex-direction-nav.ten a  { 
+top:-60px; 
+}
+
+.flex-direction-nav.ten .flex-prev.ten { 
+left: 900px;
+}
+.flex-direction-nav.ten .flex-prev:hover.ten { 
+left:900px;
+}
+
+.flex-direction-nav.ten .flex-next.ten { 
+right:0px; 
+}
+
+.flex-direction-nav.ten .flex-next:hover.ten { 
+right:0px;
+ }
+
+
+/* Direction Nav style 11 */
+
+.flex-direction-nav.eleven a  { 
+top: 395px; 
+}
+
+.flex-direction-nav.eleven .flex-prev.eleven { 
+left: 160px;
+}
+.flex-direction-nav.eleven .flex-prev:hover.eleven { 
+left:160px;
+}
+
+.flex-direction-nav.eleven .flex-next.eleven { 
+right:700px; 
+}
+
+.flex-direction-nav.eleven .flex-next:hover.eleven { 
+right:700px;
+ }
+
+
+
+/* Direction Nav style 12 */
+
+.flex-direction-nav.twelve a  { 
+top:200px; 
+}
+
+.flex-direction-nav.twelve .flex-prev.twelve { 
+left: 0px;
+}
+.flex-direction-nav.twelve .flex-prev:hover.twelve { 
+left:0px;
+}
+
+.flex-direction-nav.twelve .flex-next.twelve { 
+right:0px; 
+}
+
+.flex-direction-nav.twelve .flex-next:hover.twelve { 
+right:0px;
+ }
+
+
+/* Direction Nav style 13 */
+
+.flex-direction-nav.thirteen a  { 
+top:430px; 
+}
+
+.flex-direction-nav.thirteen .flex-prev.thirteen { 
+left: 448px;
+}
+.flex-direction-nav.thirteen .flex-prev:hover.thirteen { 
+left:448px;
+}
+
+.flex-direction-nav.thirteen .flex-next.thirteen { 
+right:433px; 
+}
+
+.flex-direction-nav.thirteen .flex-next:hover.thirteen { 
+right:433px;
+ }
+
+
+/* Direction Nav style 6 two*/
+
+.flex-direction-nav.six.two a  { 
+top:357px; 
+}
+
+.flex-direction-nav.six.two .flex-prev.six.two { 
+left: 180px;
+}
+.flex-direction-nav.six.two .flex-prev:hover.six.two { 
+left:180px;
+}
+
+.flex-direction-nav.six.two .flex-next.six.two { 
+right:695px; 
+}
+
+.flex-direction-nav.six.two .flex-next:hover.six.two { 
+right:695px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 999px){
+
+
+/* Direction Nav style 2 */
+.flex-direction-nav.two {*height: 0;}
+
+.flex-direction-nav.two a  { 
+top: 1030px; 
+}
+
+.flex-direction-nav.two .flex-prev.two { 
+left: 311px;
+}
+.flex-direction-nav.two .flex-prev:hover.two { 
+left:311px;
+}
+
+.flex-direction-nav.two .flex-next.two { 
+right:267px; 
+}
+
+.flex-direction-nav.two .flex-next:hover.two { 
+right:267px;
+ }
+
+
+.section_holder5 .skill_img {
+    width: 90%;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Direction Nav style 3 */
+
+.flex-direction-nav.three a  { 
+top: 660px; 
+}
+
+.flex-direction-nav.three .flex-prev.three { 
+left: 275px;
+}
+.flex-direction-nav.three .flex-prev:hover.three { 
+left:275px;
+}
+
+.flex-direction-nav.three .flex-next.three { 
+right:260px; 
+}
+
+.flex-direction-nav.three .flex-next:hover.three { 
+right:260px;
+ }
+
+.flex-direction-nav.five .flex-prev.five {
+left: 575px;
+}
+
+
+/* Direction Nav style 4 */
+
+.flex-direction-nav.four a  { 
+top:450px; 
+}
+
+.flex-direction-nav.four .flex-prev.four { 
+left: 317px;
+}
+.flex-direction-nav.four .flex-prev:hover.four { 
+left:317px;
+}
+
+.flex-direction-nav.four .flex-next.four { 
+right:270px; 
+}
+
+.flex-direction-nav.four .flex-next:hover.four { 
+right:270px;
+ }
+
+.flex-direction-nav.four .flex-prev.four {
+    left: 317px;
+}
+
+.flex-direction-nav.four .flex-prev:hover.four {
+    left: 317px;
+}
+
+
+.flex-direction-nav.one .flex-prev.one {
+    left: 593px;
+    background: url('pre-arrow-style1.jpg') no-repeat scroll 0px 0px transparent;
+}
+
+
+
+
+
+/* Direction Nav style 2 */
+.flex-direction-nav.two {*height: 0;}
+
+.flex-direction-nav.two a  { 
+top: 1036px; 
+}
+
+.flex-direction-nav.two .flex-prev.two { 
+left: 311px;
+}
+.flex-direction-nav.two .flex-prev:hover.two { 
+left:311px;
+}
+
+.flex-direction-nav.two .flex-next.two { 
+right:267px; 
+}
+
+
+/* Direction Nav style 6 */
+.flex-direction-nav.six {*height: 0;}
+
+.flex-direction-nav.six a  { 
+top: 1491px; 
+}
+
+.flex-direction-nav.six .flex-prev.six { 
+left: 311px;
+}
+.flex-direction-nav.six .flex-prev:hover.six { 
+left:311px;
+}
+
+.flex-direction-nav.six .flex-next.six { 
+right:267px; 
+}
+
+.flex-direction-nav.six .flex-next:hover.six { 
+right:267px; 
+}
+
+
+
+/* Direction Nav style 5 */
+.flex-direction-nav.five {*height: 0;}
+
+.flex-direction-nav.five a  { 
+top: -58px; 
+}
+
+.flex-direction-nav.five .flex-prev.five { 
+left: 600px;
+}
+.flex-direction-nav.five .flex-prev:hover.five { 
+left:600px;
+}
+
+.flex-direction-nav.five .flex-next.five { 
+right:0px; 
+}
+
+.flex-direction-nav.five .flex-next:hover.five { 
+right:0px; 
+}
+
+/* Direction Nav style 7 */
+
+.flex-direction-nav.seven a  { 
+top:400px; 
+}
+
+.flex-direction-nav.seven .flex-prev.seven { 
+left: 358px;
+}
+.flex-direction-nav.seven .flex-prev:hover.seven { 
+left:358px;
+}
+
+.flex-direction-nav.seven .flex-next.seven { 
+right:320px; 
+}
+
+.flex-direction-nav.seven .flex-next:hover.seven { 
+right:320px;
+ }
+
+
+/* Direction Nav style 8 */
+
+.flex-direction-nav.eight a  { 
+top:-60px; 
+}
+
+.flex-direction-nav.eight .flex-prev.eight { 
+left: 610px;
+}
+.flex-direction-nav.eight .flex-prev:hover.eight { 
+left:610px;
+}
+
+.flex-direction-nav.eight .flex-next.eight { 
+right:-13px; 
+}
+
+.flex-direction-nav.eight .flex-next:hover.eight { 
+right:-13px;
+ }
+ 
+ 
+ 
+/* Direction Nav style 9 */
+
+.flex-direction-nav.nine a  { 
+top: 150px; 
+}
+
+.flex-direction-nav.nine .flex-prev.nine { 
+left: 50px;
+}
+.flex-direction-nav.nine .flex-prev:hover.nine { 
+left:50px;
+}
+
+.flex-direction-nav.nine .flex-next.nine { 
+right:50px; 
+}
+
+.flex-direction-nav.nine .flex-next:hover.nine { 
+right:50px;
+ }
+ 
+/* Direction Nav style 10 */
+
+.flex-direction-nav.ten a  { 
+top:-60px; 
+}
+
+.flex-direction-nav.ten .flex-prev.ten { 
+left: 615px;
+}
+.flex-direction-nav.ten .flex-prev:hover.ten { 
+left:615px;
+}
+
+.flex-direction-nav.ten .flex-next.ten { 
+right:-14px; 
+}
+
+.flex-direction-nav.ten .flex-next:hover.ten { 
+right:-14px;
+ } 
+ 
+
+/* Direction Nav style 11 */
+
+.flex-direction-nav.eleven a  { 
+top: 726px; 
+}
+
+.flex-direction-nav.eleven .flex-prev.eleven { 
+left: 580px;
+}
+.flex-direction-nav.eleven .flex-prev:hover.eleven { 
+left:580px;
+}
+
+.flex-direction-nav.eleven .flex-next.eleven { 
+right:0px; 
+}
+
+.flex-direction-nav.eleven .flex-next:hover.eleven { 
+right:0px;
+ }
+ 
+ 
+/* Direction Nav style 12 */
+
+.flex-direction-nav.twelve a  { 
+top:200px; 
+}
+
+.flex-direction-nav.twelve .flex-prev.twelve { 
+left: 0px;
+}
+.flex-direction-nav.twelve .flex-prev:hover.twelve { 
+left:0px;
+}
+
+.flex-direction-nav.twelve .flex-next.twelve { 
+right:0px; 
+}
+
+.flex-direction-nav.twelve .flex-next:hover.twelve { 
+right:0px;
+ }
+ 
+ 
+ 
+/* Direction Nav style 13 */
+
+.flex-direction-nav.thirteen a  { 
+top:1120px; 
+}
+
+.flex-direction-nav.thirteen .flex-prev.thirteen { 
+left: 293px;
+}
+.flex-direction-nav.thirteen .flex-prev:hover.thirteen { 
+left:293px;
+}
+
+.flex-direction-nav.thirteen .flex-next.thirteen { 
+right:273px; 
+}
+
+.flex-direction-nav.thirteen .flex-next:hover.thirteen { 
+right:273px;
+ } 
+ 
+ 
+ 
+ /* Direction Nav style 6 two*/
+
+.flex-direction-nav.six.two a  { 
+top:765px; 
+}
+
+.flex-direction-nav.six.two .flex-prev.six.two { 
+left: 256px;
+}
+.flex-direction-nav.six.two .flex-prev:hover.six.two { 
+left:256px;
+}
+
+.flex-direction-nav.six.two .flex-next.six.two { 
+right:314px; 
+}
+
+.flex-direction-nav.six.two .flex-next:hover.six.two { 
+right:314px;
+ }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+
+
+}
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	
+
+/* Direction Nav style 2 */
+.flex-direction-nav.two {*height: 0;}
+
+.flex-direction-nav.two a  { 
+top: 1030px; 
+}
+
+.flex-direction-nav.two .flex-prev.two { 
+left: 311px;
+}
+.flex-direction-nav.two .flex-prev:hover.two { 
+left:311px;
+}
+
+.flex-direction-nav.two .flex-next.two { 
+right:267px; 
+}
+
+.flex-direction-nav.two .flex-next:hover.two { 
+right:267px;
+ }
+
+
+.section_holder5 .skill_img {
+    width: 90%;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Direction Nav style 3 */
+
+.flex-direction-nav.three a  { 
+top: 550px; 
+}
+
+.flex-direction-nav.three .flex-prev.three { 
+left: 0px;
+}
+.flex-direction-nav.three .flex-prev:hover.three { 
+left:0px;
+}
+
+.flex-direction-nav.three .flex-next.three { 
+right:0px; 
+}
+
+.flex-direction-nav.three .flex-next:hover.three { 
+right:0px;
+ }
+
+.flex-direction-nav.five .flex-prev.five {
+left: 575px;
+}
+
+
+/* Direction Nav style 4 */
+
+.flex-direction-nav.four a  { 
+top:489px; 
+}
+
+.flex-direction-nav.four .flex-prev.four { 
+left: 190px;
+}
+.flex-direction-nav.four .flex-prev:hover.four { 
+left:190px;
+}
+
+.flex-direction-nav.four .flex-next.four { 
+right:130px; 
+}
+
+.flex-direction-nav.four .flex-next:hover.four { 
+right:130px;
+ }
+
+.flex-direction-nav.four .flex-prev.four {
+    left: 190px;
+}
+
+.flex-direction-nav.four .flex-prev:hover.four {
+    left: 190px;
+}
+
+
+.flex-direction-nav.one .flex-prev.one {
+    left: 337px;
+    background: url('pre-arrow-style1.jpg') no-repeat scroll 0px 0px transparent;
+}
+
+.flex-direction-nav.one .flex-prev:hover.one {
+    left: 337px;
+}
+
+
+
+/* Direction Nav style 2 */
+.flex-direction-nav.two {*height: 0;}
+
+.flex-direction-nav.two a  { 
+top: 995px; 
+}
+
+.flex-direction-nav.two .flex-prev.two { 
+left: 162px;
+}
+.flex-direction-nav.two .flex-prev:hover.two { 
+left:162px;
+}
+
+.flex-direction-nav.two .flex-next.two { 
+right:160px; 
+}
+
+.flex-direction-nav.two .flex-next:hover.two { 
+right:160px; 
+}
+
+
+/* Direction Nav style 6 */
+.flex-direction-nav.six {*height: 0;}
+
+.flex-direction-nav.six a  { 
+top: 1443px; 
+}
+
+.flex-direction-nav.six .flex-prev.six { 
+left: 170px;
+}
+.flex-direction-nav.six .flex-prev:hover.six { 
+left:170px;
+}
+
+.flex-direction-nav.six .flex-next.six { 
+right:147px; 
+}
+
+.flex-direction-nav.six .flex-next:hover.six { 
+right:147px; 
+}
+
+
+
+/* Direction Nav style 5 */
+.flex-direction-nav.five {*height: 0;}
+
+.flex-direction-nav.five a  { 
+top: -85px; 
+}
+
+.flex-direction-nav.five .flex-prev.five { 
+left: 350px;
+}
+.flex-direction-nav.five .flex-prev:hover.five { 
+left:350px;
+}
+
+.flex-direction-nav.five .flex-next.five { 
+right:0px; 
+}
+
+.flex-direction-nav.five .flex-next:hover.five { 
+right:0px; 
+}
+
+
+/* Direction Nav style 7 */
+
+.flex-direction-nav.seven a  { 
+top:400px; 
+}
+
+.flex-direction-nav.seven .flex-prev.seven { 
+left: 180px;
+}
+.flex-direction-nav.seven .flex-prev:hover.seven { 
+left:180px;
+}
+
+.flex-direction-nav.seven .flex-next.seven { 
+right:160px; 
+}
+
+.flex-direction-nav.seven .flex-next:hover.seven { 
+right:160px;
+ }
+
+/* Direction Nav style 8 */
+
+.flex-direction-nav.eight a  { 
+top:-60px; 
+}
+
+.flex-direction-nav.eight .flex-prev.eight { 
+left: 358px;
+}
+.flex-direction-nav.eight .flex-prev:hover.eight { 
+left:358px;
+}
+
+.flex-direction-nav.eight .flex-next.eight { 
+right:-13px; 
+}
+
+.flex-direction-nav.eight .flex-next:hover.eight { 
+right:-13px;
+ }
+ 
+
+/* Direction Nav style 9 */
+
+.flex-direction-nav.nine a  { 
+top: 150px; 
+}
+
+.flex-direction-nav.nine .flex-prev.nine { 
+left: 50px;
+}
+.flex-direction-nav.nine .flex-prev:hover.nine { 
+left:50px;
+}
+
+.flex-direction-nav.nine .flex-next.nine { 
+right:50px; 
+}
+
+.flex-direction-nav.nine .flex-next:hover.nine { 
+right:50px;
+ } 
+ 
+ 
+/* Direction Nav style 10 */
+
+.flex-direction-nav.ten a  { 
+top:-60px; 
+}
+
+.flex-direction-nav.ten .flex-prev.ten { 
+left: 360px;
+}
+.flex-direction-nav.ten .flex-prev:hover.ten { 
+left:360px;
+}
+
+.flex-direction-nav.ten .flex-next.ten { 
+right:-14px; 
+}
+
+.flex-direction-nav.ten .flex-next:hover.ten { 
+right:-14px;
+ }  
+ 
+ 
+ /* Direction Nav style 11 */
+
+.flex-direction-nav.eleven a  { 
+top: 735px; 
+}
+
+.flex-direction-nav.eleven .flex-prev.eleven { 
+left: 330px;
+}
+.flex-direction-nav.eleven .flex-prev:hover.eleven { 
+left:330px;
+}
+
+.flex-direction-nav.eleven .flex-next.eleven { 
+right:0px; 
+}
+
+.flex-direction-nav.eleven .flex-next:hover.eleven { 
+right:0px;
+ }
+ 
+/* Direction Nav style 12 */
+
+.flex-direction-nav.twelve a  { 
+top:200px; 
+}
+
+.flex-direction-nav.twelve .flex-prev.twelve { 
+left: 0px;
+}
+.flex-direction-nav.twelve .flex-prev:hover.twelve { 
+left:0px;
+}
+
+.flex-direction-nav.twelve .flex-next.twelve { 
+right:0px; 
+}
+
+.flex-direction-nav.twelve .flex-next:hover.twelve { 
+right:0px;
+ }
+ 
+ 
+ /* Direction Nav style 13 */
+
+.flex-direction-nav.thirteen a  { 
+top:1140px; 
+}
+
+.flex-direction-nav.thirteen .flex-prev.thirteen { 
+left: 173px;
+}
+.flex-direction-nav.thirteen .flex-prev:hover.thirteen { 
+left:173px;
+}
+
+.flex-direction-nav.thirteen .flex-next.thirteen { 
+right:151px; 
+}
+
+.flex-direction-nav.thirteen .flex-next:hover.thirteen { 
+right:151px;
+ } 
+ 
+ 
+ /* Direction Nav style 6 two*/
+
+.flex-direction-nav.six.two a  { 
+top:690px; 
+}
+
+.flex-direction-nav.six.two .flex-prev.six.two { 
+left: 162px;
+}
+.flex-direction-nav.six.two .flex-prev:hover.six.two { 
+left:162px;
+}
+
+.flex-direction-nav.six.two .flex-next.six.two { 
+right:150px; 
+}
+
+.flex-direction-nav.six.two .flex-next:hover.six.two { 
+right:150px;
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 479px){
+
+
+/* Direction Nav style 2 */
+.flex-direction-nav.two {*height: 0;}
+
+.flex-direction-nav.two a  { 
+top: 1030px; 
+}
+
+.flex-direction-nav.two .flex-prev.two { 
+left: 311px;
+}
+.flex-direction-nav.two .flex-prev:hover.two { 
+left:311px;
+}
+
+.flex-direction-nav.two .flex-next.two { 
+right:267px; 
+}
+
+.flex-direction-nav.two .flex-next:hover.two { 
+right:267px;
+ }
+
+
+.section_holder5 .skill_img {
+    width: 90%;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Direction Nav style 3 */
+
+.flex-direction-nav.three a  { 
+top: 533px; 
+}
+
+.flex-direction-nav.three .flex-prev.three { 
+left: 0px;
+}
+.flex-direction-nav.three .flex-prev:hover.three { 
+left:0px;
+}
+
+.flex-direction-nav.three .flex-next.three { 
+right:0px; 
+}
+
+.flex-direction-nav.three .flex-next:hover.three { 
+right:0px;
+ }
+
+.flex-direction-nav.five .flex-prev.five {
+left: 575px;
+}
+
+
+/* Direction Nav style 4 */
+
+.flex-direction-nav.four a  { 
+top:824px; 
+}
+
+.flex-direction-nav.four .flex-prev.four { 
+left:100px;
+}
+.flex-direction-nav.four .flex-prev:hover.four { 
+left:100px;
+}
+
+.flex-direction-nav.four .flex-next.four { 
+right:100px; 
+}
+
+.flex-direction-nav.four .flex-next:hover.four { 
+right:100px;
+ }
+
+
+.flex-direction-nav.one .flex-prev.one {
+    left: 337px;
+    background: url('pre-arrow-style1.jpg') no-repeat scroll 0px 0px transparent;
+}
+
+.flex-direction-nav.one .flex-prev:hover.one {
+    left: 337px;
+}
+
+
+
+/* Direction Nav style 2 */
+.flex-direction-nav.two {*height: 0;}
+
+.flex-direction-nav.two a  { 
+top: 1042px; 
+}
+
+.flex-direction-nav.two .flex-prev.two { 
+left: 98px;
+}
+.flex-direction-nav.two .flex-prev:hover.two { 
+left:98px;
+}
+
+.flex-direction-nav.two .flex-next.two { 
+right:95px; 
+}
+
+.flex-direction-nav.two .flex-next:hover.two { 
+right:95px; 
+}
+
+
+/* Direction Nav style 6 */
+.flex-direction-nav.six {*height: 0;}
+
+.flex-direction-nav.six a  { 
+top: 1233px; 
+}
+
+.flex-direction-nav.six .flex-prev.six { 
+left: 111px;
+}
+.flex-direction-nav.six .flex-prev:hover.six { 
+left:111px;
+}
+
+.flex-direction-nav.six .flex-next.six { 
+right:86px; 
+}
+
+.flex-direction-nav.six .flex-next:hover.six { 
+right:86px; 
+}
+
+
+
+/* Direction Nav style 5 */
+.flex-direction-nav.five {*height: 0;}
+
+.flex-direction-nav.five a  { 
+top: -19px; 
+}
+
+.flex-direction-nav.five .flex-prev.five { 
+left: 202px;
+}
+.flex-direction-nav.five .flex-prev:hover.five { 
+left:202px;
+}
+
+.flex-direction-nav.five .flex-next.five { 
+right:0px; 
+}
+
+.flex-direction-nav.five .flex-next:hover.five { 
+right:0px; 
+}
+
+
+
+/* Direction Nav style 1*/
+.flex-direction-nav.one {*height: 0;}
+
+.flex-direction-nav.one a  { 
+top: 370px; 
+}
+
+.flex-direction-nav.one .flex-prev.one { 
+left: 190px;
+}
+.flex-direction-nav.one .flex-prev:hover.one { 
+left:190px;
+}
+
+.flex-direction-nav.one .flex-next.one { 
+right:0px; 
+}
+
+.flex-direction-nav.one .flex-next:hover.one { 
+right:0px; 
+}
+
+
+/* Direction Nav style 7 */
+
+.flex-direction-nav.seven a  { 
+top:300px; 
+}
+
+.flex-direction-nav.seven .flex-prev.seven { 
+left: 100px;
+}
+.flex-direction-nav.seven .flex-prev:hover.seven { 
+left:100px;
+}
+
+.flex-direction-nav.seven .flex-next.seven { 
+right:100px; 
+}
+
+.flex-direction-nav.seven .flex-next:hover.seven { 
+right:100px;
+ }
+
+
+.carousel.two li img {width:285px; height:215px; }
+
+/* Direction Nav style 8 */
+
+.flex-direction-nav.eight a  { 
+top:-60px; 
+}
+
+.flex-direction-nav.eight .flex-prev.eight { 
+left: 228px;
+}
+.flex-direction-nav.eight .flex-prev:hover.eight { 
+left:228px;
+}
+
+.flex-direction-nav.eight .flex-next.eight { 
+right:-18px; 
+}
+
+.flex-direction-nav.eight .flex-next:hover.eight { 
+right:-18px;
+ }
+ 
+ 
+/* Direction Nav style 9 */
+
+.flex-direction-nav.nine a  { 
+top: 120px; 
+}
+
+.flex-direction-nav.nine .flex-prev.nine { 
+left: 0px;
+}
+.flex-direction-nav.nine .flex-prev:hover.nine { 
+left:0px;
+}
+
+.flex-direction-nav.nine .flex-next.nine { 
+right:0px; 
+}
+
+.flex-direction-nav.nine .flex-next:hover.nine { 
+right:0px;
+ }  
+ 
+/* Direction Nav style 10 */
+
+.flex-direction-nav.ten a  { 
+top:-60px; 
+}
+
+.flex-direction-nav.ten .flex-prev.ten { 
+left: 220px;
+}
+.flex-direction-nav.ten .flex-prev:hover.ten { 
+left:220px;
+}
+
+.flex-direction-nav.ten .flex-next.ten { 
+right:-14px; 
+}
+
+.flex-direction-nav.ten .flex-next:hover.ten { 
+right:-14px;
+ } 
+ 
+ /* Direction Nav style 11 */
+
+.flex-direction-nav.eleven a  { 
+top: 630px; 
+}
+
+.flex-direction-nav.eleven .flex-prev.eleven { 
+left: 200px;
+}
+.flex-direction-nav.eleven .flex-prev:hover.eleven { 
+left:200px;
+}
+
+.flex-direction-nav.eleven .flex-next.eleven { 
+right:0px; 
+}
+
+.flex-direction-nav.eleven .flex-next:hover.eleven { 
+right:0px;
+ } 
+ 
+/* Direction Nav style 12 */
+
+.flex-direction-nav.twelve a  { 
+top:200px; 
+}
+
+.flex-direction-nav.twelve .flex-prev.twelve { 
+left: 0px;
+}
+.flex-direction-nav.twelve .flex-prev:hover.twelve { 
+left:0px;
+}
+
+.flex-direction-nav.twelve .flex-next.twelve { 
+right:0px; 
+}
+
+.flex-direction-nav.twelve .flex-next:hover.twelve { 
+right:0px;
+ }
+
+
+ /* Direction Nav style 13 */
+
+.flex-direction-nav.thirteen a  { 
+top:1200px; 
+}
+
+.flex-direction-nav.thirteen .flex-prev.thirteen { 
+left: 94px;
+}
+.flex-direction-nav.thirteen .flex-prev:hover.thirteen { 
+left:94px;
+}
+
+.flex-direction-nav.thirteen .flex-next.thirteen { 
+right:94px; 
+}
+
+.flex-direction-nav.thirteen .flex-next:hover.thirteen { 
+right:94px;
+ } 
+
+
+ /* Direction Nav style 6 two*/
+
+.flex-direction-nav.six.two a  { 
+top:834px; 
+}
+
+.flex-direction-nav.six.two .flex-prev.six.two { 
+left: 95px;
+}
+.flex-direction-nav.six.two .flex-prev:hover.six.two { 
+left:95px;
+}
+
+.flex-direction-nav.six.two .flex-next.six.two { 
+right:97px; 
+}
+
+.flex-direction-nav.six.two .flex-next:hover.six.two { 
+right:97px;
+ } 
+
+
+
+ 
+ 
+ 
+ 
+ 
+
+}

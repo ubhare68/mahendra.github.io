@@ -1,0 +1,66 @@
+
+/* ============================================== 
+   = OWL SLIDER */
+  
+div.owl-theme {
+	.owl-controls {
+		margin:20px 0;
+		position:static;
+		text-align:center;
+	}
+	.owl-pagination {
+		display:inline-block;
+		.owl-page {
+			float:left;
+		}
+	}
+	.owl-controls {
+		.owl-buttons {
+			div {
+				width:50px;
+				height:75px;
+				margin-top:-38px;
+				padding:0;
+				background:#fff;
+				z-index:2;
+				font-size:0;
+				@include border-radius(0);
+				&:after {
+					@include pos(absolute,0,0,0,0);
+					text-align:center;
+					
+				}
+				&.owl-next {
+					@include pos(absolute,50%,15px,auto,auto);
+					margin-top:-38px;
+					&:after {
+						@include font-awesome("\f105",20px,75px);
+					}
+				}
+				&.owl-prev {
+					@include pos(absolute,50%,auto,auto,15px);
+					margin-top:-38px;
+					&:after {
+						@include font-awesome("\f104",20px,75px);
+					}
+				}
+			}
+		}
+	}
+	.item {
+		width:100%;
+		height:auto;
+	}
+}
+
+div#owl-demo {
+	.item {
+		border-width:0;
+		margin:0;
+		width:100%;
+		height:auto;
+		background:transparent;
+		text-align:left;
+		@include border-radius(0);
+	}
+}
